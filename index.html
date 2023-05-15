@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -6,8 +6,127 @@
   <link href="/dist/output.css" rel="stylesheet">
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+  
 </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tycia</title>
+  <meta name="author" content="name">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="keywords,here">
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet"> <!--Totally optional :) -->
+
+</head>
+
+<body class="bg-white font-sans leading-normal tracking-normal">
+
+  <nav class="flex items-center justify-between flex-wrap p-6 fixed w-full z-10 top-0 bg-black text-gray-50">
+    <div class="flex items-center flex-shrink-0 text-white mr-6">
+      <a class="text-white no-underline hover:text-white hover:no-underline" href="#">
+        <span class="text-2xl pl-2"> TYCIA Foundation</span>
+      </a>
+    </div>
+
+    <div class="block lg:hidden">
+      <button id="nav-toggle"
+        class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content">
+      <ul class="list-reset lg:flex justify-end flex-1 items-center ">
+        <li class="mr-3">
+          <a class="inline-block py-2 px-4 text-white no-underline" href="#">Home</a>
+        </li>
+        <li class="mr-3">
+          <a class="inline-block text-gray-300 no-underline hover:text-white hover:text-underline py-2 px-4"
+            href="#">Education</a>
+
+        </li>
+
+        <li class="mr-3">
+          <a class="inline-block text-gray-300 no-underline hover:text-white hover:text-underline py-2 px-4"
+            href="#">Criminal Justice</a>
+        </li>
+        <li class="mr-3">
+          <a class="inline-block text-gray-300 no-underline hover:text-white hover:text-underline py-2 px-4"
+            href="#">Youth Leadership</a>
+
+        </li>
+        <li class="mr-3">
+          <a class="inline-block text-gray-300 no-underline hover:text-white hover:text-underline py-2 px-4"
+            href="#">Livelihoods</a>
+
+        </li>
+        <li class="mr-3">
+          <a class="inline-block text-gray-300 no-underline hover:text-white hover:text-underline py-2 px-4"
+            href="#">Disaster Relief</a>
+
+        </li>
+        <li class="mr-3">
+          <a class="inline-block text-gray-300 no-underline hover:text-white hover:text-underline py-2 px-4"
+            href="#">More</a>
+
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <!-- Header section end -->
+
+  <!-- Hero section start  -->
+
+
+  <section class="bg-gray-50 dark:bg-gray-900 pt-20 pb-20">
+    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+      <div class="mr-auto place-self-center lg:col-span-7 p-25">
+        <div class="">
+          <img src="img/Tycia 1.webp" alt="girl Img" class="w-90">
+        </div>
+        <!-- <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Lorem ipsum dolor sit amet consectetur.</h1> -->
+        <p class="max-w-2xl mb-6 font-light text-black font-thin lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">TYCIA
+          Foundation is a Non Governmental Organisation registered in 2011 working in the domains of Education, Criminal
+          Justice, Youth Leadership, Disaster Relief, Health and Livelihoods generation. </p>
+        <div class="pl-[50px]">
+          <a href="#"
+          class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-lime-300 border border-gray-300 rounded-lg hover:bg-gray-300 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+          Donate Now 
+        </a>
+        <a href="#"
+          class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-300 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+          Learn more
+        </a>
+        </div>
+      </div>
+
+      <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+        <img
+          src="https://static.wixstatic.com/media/800c85_1449ca7514954eb29a260cc2a9a8a37b~mv2.jpg/v1/fill/w_372,h_466,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/800c85_1449ca7514954eb29a260cc2a9a8a37b~mv2.jpg"
+          alt="girl Img" class="rounded-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero section end  -->
+
+  <script>
+    //Javascript to toggle the menu
+    document.getElementById('nav-toggle').onclick = function () {
+      document.getElementById("nav-content").classList.toggle("hidden");
+    }
+  </script>
+
+</body>
+
 </html>
