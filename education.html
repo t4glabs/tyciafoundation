@@ -15,9 +15,9 @@
 
 
 
+ <!-- Header section start -->
 
-  <!-- Header section start -->
-
+  <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script> -->
   <div class="w-full text-gray-300 bg-black p-4">
     <div x-data="{ open: false }"
       class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
@@ -39,11 +39,11 @@
       <nav :class="{'flex': open, 'hidden': !open}"
         class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
         <a class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-          href="#">Home</a>
+          href="index.html">Home</a>
         <div @click.away="open = false" class="relative" x-data="{ open: false }">
           <button @click="open = !open"
             class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
-            <span>Education</span>
+            <a href="education.html">Education</a>
             <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
               class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
               <path fill-rule="evenodd"
@@ -139,13 +139,13 @@
   }
   ```
 -->
-  <div class="bg-gray-50 py-40">
-    <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-      <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white p-8 text-center">Education
+  <div class="bg-gray-100">
+    <div class="mx-auto max-w-2xl px-4 py-8 sm:px-4 sm:py-12 lg:max-w-7xl lg:px-8">
+      <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white pt-2 text-center">Education
       </h1>
-      <div class="mt-6 grid grid-cols-1 gap-x-8 sm:grid-cols-2 lg:grid-cols-2 xl:gap-x-8">
+      <div class="mt-6 grid grid-cols-1 gap-x-8 gap-y-8  sm:grid-cols-2 lg:grid-cols-2 xl:gap-x-8">
 
-        <div class=" group relative p-8 rounded-xl py-2">
+        <div class=" group relative p-8 rounded-xl bg-gray-200">
           <div class="p-4">
             <h3 class="text-2xl font-bold tracking-tight text-gray-900 hover:underline">
               <a href="#">
@@ -173,7 +173,7 @@
 
         <!-- More products... -->
 
-        <div class="group relative p-8 rounded-xl">
+        <div class="group relative p-8 rounded-xl bg-gray-200">
           <div class="p-4">
             <h3 class="text-2xl font-bold tracking-tight text-gray-900 hover:underline">
               <a href="#">
@@ -196,7 +196,7 @@
 
         <!-- More products... -->
 
-        <div class="group relative p-8 rounded-xl">
+        <div class="group relative p-8 rounded-xl bg-gray-200">
           <div class="p-4">
             <h3 class="text-2xl font-bold tracking-tight text-gray-900 hover:underline">
               <a href="#">
@@ -220,7 +220,7 @@
 
         <!-- 888 -->
 
-        <div class="group relative p-8 rounded-xl">
+        <div class="group relative p-8 rounded-xl bg-gray-200">
           <div class="p-4">
             <h3 class="text-2xl font-bold tracking-tight text-gray-900 hover:underline">
               <a href="#">
