@@ -44,7 +44,7 @@
       <nav :class="{'flex': open, 'hidden': !open}"
         class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
         <a class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-          href="#">Home</a>
+          href="./index.html">Home</a>
         <div @click.away="open = false" class="relative" x-data="{ open: false }">
           <button @click="open = !open"
             class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
@@ -77,9 +77,9 @@
         <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
           href="#">Youth Leadership</a>
         <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-          href="#">Livelihoods</a>
+          href="./livelihoods.html">Livelihoods</a>
         <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-          href="#">Disaster Relief</a>
+          href="./disaster-releif.html">Disaster Relief</a>
         <div @click.away="open = false" class="relative" x-data="{ open: false }">
           <button @click="open = !open"
             class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
@@ -114,7 +114,7 @@
 
 
   <!-- carousal section start -->
-  <section class="p-8">
+  <section>
     <div class="carousel bg-gray-500 relative container mx-auto" style="max-width:1600px;">
       <div class="carousel-inner relative overflow-hidden w-full">
         <!--Slide 1-->
@@ -122,8 +122,8 @@
           checked="checked">
         <div class="carousel-item absolute opacity-0" style="height:80vh;">
           <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
-            style="background-image: url();  ">
-            <img src="./public/img/criminal-justice-carousal1.jpeg" alt="">
+            style="justify-content: center;">
+            <img class=" w-full" src="./public/img/criminal-justice-carousal1.jpeg" alt="">
           </div>
         </div>
 
@@ -136,8 +136,8 @@
         <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
         <div class="carousel-item absolute opacity-0 bg-cover bg-right" style="height:80vh;">
           <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
-            style="background-image: url()">
-            <img src="./public/img/criminal-justice-carousal2.jpeg" alt="">
+            style="justify-content: center;">
+            <img class=" w-full" src="./public/img/criminal-justice-carousal2.jpeg" alt="">
           </div>
         </div>
         <label for="carousel-1"
@@ -149,8 +149,8 @@
         <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
         <div class="carousel-item absolute opacity-0" style="height:80vh;">
           <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-center"
-            style="background-image: url();">
-            <img src="./public/img/criminal-justice-carousal3.jpeg" alt="">
+            style="justify-content: center;">
+            <img class=" w-full" src="./public/img/criminal-justice-carousal3.jpeg" alt="">
           </div>
         </div>
         <label for="carousel-2"
@@ -185,32 +185,40 @@
   <!-- Divs Start -->
   <section class="bg-white px-2 py-2">
     <div class="container px-6 mx-auto">
-      <div class="lg:flex lg:items-center">
+      <div class="lg:flex lg:items-center mt-8">
         <!-- div-1 -->
         <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-8 ">
-          <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white p-2">Second Chance
+          <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white p-2">Second Chance
             Fellowship
           </h1>
           <p
-            class="max-w-2xl mb-6 font-light text-black font-thin lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 p-2">
+            class="max-w-2xl mb-6 font-light text-black font-thin lg:mb-8 md:text-1.8xl  lg:text-1.8xl  dark:text-gray-400 p-2">
             Incubator for changemakers in criminal justice space
-            <a href="">Learn more ></a>
+            <br>
+            <span style="color: red; text-decoration: underline;">
+              <a href="https://www.secondchancefellowship.org/" target="_blank">Learn more ></a>
+            </span>
+
           </p>
-          <img src="./public/img/second-chance-fellow.jpeg" alt="boys-pic" class="h-78 w-96 p-2 lg:w-96 lg:h-78">
+          <img src="./public/img/second-chance-fellow.jpeg" class="h-78 w-100 p-2 lg:w-100 lg:h-78">
         </div>
 
 
         <!-- div-2 -->
         <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-8 ">
-          <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white p-2">Project Unlearn
+          <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white p-2">Project Unlearn
             Fellowship
           </h1>
           <p
-            class="max-w-2xl mb-6 font-light text-black font-thin lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 p-2">
+            class="max-w-2xl mb-6 font-light text-black font-thin lg:mb-8 md:text-1.8xl  lg:text-1.8xl  dark:text-gray-400 p-2">
             Sexual respect, addiction management, and civics training for inmates
-            <a href="https://www.projectunlearn.in/">Learn more ></a>
+            <br>
+            <span style="color: red; text-decoration: underline;"><a href="https://www.projectunlearn.in/">
+                Learn more ></a>
+            </span>
+
           </p>
-          <img src="./public/img/project-unlearn1.jpeg" alt="boys-pic" class="h-78 w-96 p-2 lg:w-96 lg:h-78">
+          <img src="./public/img/project-unlearn1.jpeg" class="h-78 w-100 p-2 lg:w-100 lg:h-78">
         </div>
       </div>
     </div>
@@ -220,128 +228,44 @@
 
   <section class="bg-white px-2 py-2">
     <div class="container px-6 mx-auto">
-      <div class="lg:flex lg:items-center">
+      <div class="lg:flex lg:items-center mt-5">
         <!-- div-3 -->
         <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-8 ">
-          <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white p-2">Kunji
+          <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white p-2">Kunji
           </h1>
           <p
-            class="max-w-2xl mb-6 font-light text-black font-thin lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 p-2">
+            class="max-w-2xl mb-6 font-light text-black font-thin lg:mb-8 md:text-1.8xl  lg:text-1.8xl  dark:text-gray-400 p-2">
             Rehabilitation hotline to connect recently released inmates to resources.
-            <a href="">Learn more ></a>
+            <br>
+            <span style="color: red; text-decoration: underline;"> <a href="">Learn more ></a></span>
+
           </p>
-          <img src="./public/img/kunji.jpeg" class="h-78 w-96 p-2 lg:w-96 lg:h-78">
+          <img src="./public/img/kunji.jpeg" class="h-78 w-100 p-2 lg:w-100 lg:h-78">
         </div>
 
 
         <!-- div-4 -->
         <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-8 ">
-          <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white p-2">Better Life Prison
+          <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white p-2">Better Life
+            Prison
             School
           </h1>
           <p
-            class="max-w-2xl mb-6 font-light text-black font-thin lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 p-2">
+            class="max-w-2xl mb-6 font-light text-black font-thin lg:mb-8 md:text-1.8xl lg:text-1.8xl dark:text-gray-400 p-2">
             Contextualized literacy and academic learning for inmates in Delhi and Gurgaon
-            <a href="https://www.projectunlearn.in/">Learn more ></a>
+            <br>
+            <span style="color: red; text-decoration: underline;">
+              <a href="https://www.projectunlearn.in/">
+                Learn more ></a>
+            </span>
+
           </p>
-          <img src="./public/img/better-life-prison1.jpeg" class="h-78 w-96 p-2 lg:w-96 lg:h-78">
+          <img src="./public/img/better-life-prison1.jpeg" class="h-78 w-100 p-2 lg:w-100 lg:h-78">
         </div>
       </div>
     </div>
   </section>
 
-
-  <!-- second section  -->
-  <!-- <section>
-    <div class="bg-gray-100">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-          <h2 class="text-2xl font-bold text-gray-900">Collections</h2>
-
-          <div class="mt-6 space-y-20 lg:grid lg:grid-cols-2 lg:gap-x-6 lg:space-y-0">
-
-            <div class="group relative">
-              <div
-                class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
-                <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg"
-                  alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
-                  class="h-full w-full object-cover object-center">
-              </div>
-              <h3 class="mt-6 text-sm text-gray-500">
-                <a href="#">
-                  <span class="absolute inset-0"></span>
-                  Desk and Office
-                </a>
-              </h3>
-              <p class="text-base font-semibold text-gray-900">Work from home accessories</p>
-            </div>
-
-
-            <div class="group relative">
-              <div
-                class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
-                <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg"
-                  alt="Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant."
-                  class="h-full w-full object-cover object-center">
-              </div>
-              <h3 class="mt-6 text-sm text-gray-500">
-                <a href="#">
-                  <span class="absolute inset-0"></span>
-                  Self-Improvement
-                </a>
-              </h3>
-              <p class="text-base font-semibold text-gray-900">Journals and note-taking</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="bg-gray-100">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-
-          <div class="mt-6 space-y-20 lg:grid lg:grid-cols-2 lg:gap-x-6 lg:space-y-0">
-
-            <div class="group relative">
-              <div
-                class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
-                <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg"
-                  alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
-                  class="h-full w-full object-cover object-center">
-              </div>
-              <h3 class="mt-6 text-sm text-gray-500">
-                <a href="#">
-                  <span class="absolute inset-0"></span>
-                  Desk and Office
-                </a>
-              </h3>
-              <p class="text-base font-semibold text-gray-900">Work from home accessories</p>
-            </div>
-
-            <div class="group relative">
-              <div
-                class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
-                <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg"
-                  alt="Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant."
-                  class="h-full w-full object-cover object-center">
-              </div>
-              <h3 class="mt-6 text-sm text-gray-500">
-                <a href="#">
-                  <span class="absolute inset-0"></span>
-                  Self-Improvement
-                </a>
-              </h3>
-              <p class="text-base font-semibold text-gray-900">Journals and note-taking</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- ******************* -->
 
   <!-- Footer section Start -->
   <footer class="bg-gray-900" aria-labelledby="footer-heading">
