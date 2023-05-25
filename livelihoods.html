@@ -40,7 +40,7 @@
             <nav :class="{'flex': open, 'hidden': !open}"
                 class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
                 <a class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="#">Home</a>
+                    href="./index.html">Home</a>
                 <div @click.away="open = false" class="relative" x-data="{ open: false }">
                     <button @click="open = !open"
                         class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
@@ -69,14 +69,14 @@
                     </div>
                 </div>
                 <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="#">Criminal Justice</a>
+                    href="./criminal-justice.html">Criminal Justice</a>
 
                 <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="#">Youth Leadership</a>
+                    href="./youth-leadership.html">Youth Leadership</a>
                 <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="#">Livelihoods</a>
                 <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="#">Disaster Relief</a>
+                    href="./disaster-releif.html">Disaster Relief</a>
                 <div @click.away="open = false" class="relative" x-data="{ open: false }">
                     <button @click="open = !open"
                         class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
@@ -181,49 +181,227 @@
 
 
     <!-- Divs Start -->
-    <section class="bg-white px-2 py-2">
-        <div class="container px-6 mx-auto">
-            <div class="lg:flex lg:items-center mt-10">
-                <!-- div-1 -->
-                <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-8 ">
+    <!-- <section class="bg-white px-2 py-2"> -->
+    <!-- <div class="container px-6 mx-auto"> -->
+    <!-- <h1 class="text-4xl text-center font-bold pt-8">Livelihoods</h1> -->
+    <!-- <div class="lg:flex lg:items-center mt-10"> -->
+    <!-- div-1 -->
+    <!-- <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-10 px-10">
                     <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white p-2">
                         Samarth
                     </h1>
                     <p
-                        class="max-w-2xl mb-6 font-light text-black font-thin lg:mb-8 md:text-1.8xl lg:text-1.8xl dark:text-gray-400 p-2">
+                        class="max-w-2xl mb-6 font-light text-black font-normal lg:mb-8 md:text-1.8xl lg:text-1.8xl dark:text-gray-400 p-2">
                         Business support and training for families who lost their primary earner to Covid.
                         <br>
                         <span style="color: red; text-decoration: underline;">
-                            <a href="">Learn more ></a>
+                            <a class="hover:text-black" href="">Learn more ></a>
                         </span>
 
                     </p>
-                    <img src="./public/img/samarth1.jpeg" class="h-78 w-100 p-2 lg:w-100 lg:h-78">
-                </div>
+                    <img src="./public/img/samarth1.jpeg" class="h-78 w-100 p-2 lg:w-100 lg:h-78 rounded-xl shadow-2xl">
+                </div> -->
 
 
-                <!-- div-2 -->
-                <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-8 ">
+    <!-- div-2 -->
+    <!-- <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-10 px-10">
                     <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white p-2">Project
                         Saksham
                     </h1>
                     <p
-                        class="max-w-2xl mb-6 font-light text-black font-thin lg:mb-8 md:text-1.8xl lg:text-1.8xl dark:text-gray-400 p-2">
+                        class="max-w-2xl mb-6 font-light text-black font-normal lg:mb-8 md:text-1.8xl lg:text-1.8xl dark:text-gray-400 p-2">
                         Rehabilitating the street vendors of Delhi and Srinagar post lockdown.
                         <br>
                         <span style="color: red; text-decoration: underline;">
-                            <a href="https://www.projectunlearn.in/">Learn more ></a>
+                            <a class="hover:text-black" href="">Learn more ></a>
                         </span>
 
                     </p>
-                    <img src="./public/img/saksham1.jpeg" class="h-78 w-100 p-2 lg:w-100 lg:h-78">
+                    <img src="./public/img/saksham1.jpeg" class="h-78 w-100 p-2 lg:w-100 lg:h-78 rounded-xl shadow-2xl">
+                </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </section> -->
+    <!-- ******************* -->
+
+
+    <!-- carousal card start -->
+    <section class="bg-gray-100 px-2 py-2">
+
+        <div class="container px-6 mx-auto">
+            <h1 class="text-center text-black font-bold text-4xl py-8">
+                Livelihoods
+            </h1>
+
+            <div class="lg:flex lg:items-center">
+
+                <!-- carousal-1 -->
+                <div class="carousel  container mx-auto" style="max-width:500px;">
+                    <div class="carousel-inner relative overflow-hidden w-full">
+                        <!--Slide 1-->
+                        <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white p-2">
+                            Samarth
+                        </h1>
+                        <p
+                            class="max-w-2xl mb-6 font-light text-black font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl  dark:text-gray-400 p-2">
+                            Business support and training for families who lost their primary earner to Covid. <br>
+                            <span style="color: red; text-decoration: underline;">
+                                <a class="hover:text-black" href="" target="_blank">Learn more
+                                    ></a>
+                            </span>
+
+                        </p>
+                        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true"
+                            hidden="" checked="checked">
+                        <div class="carousel-item absolute opacity-0" style="height:80vh;">
+                            <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
+                                style="justify-content: center;">
+                                <img class=" w-full" src="./public/img/criminal-justice-carousal1.jpeg" alt="">
+                            </div>
+                        </div>
+
+                        <label for="carousel-3"
+                            class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                        <label for="carousel-2"
+                            class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+                        <!--Slide 2-->
+
+                        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true"
+                            hidden="">
+                        <div class="carousel-item absolute opacity-0 bg-cover bg-right" style="height:80vh;">
+                            <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
+                                style="justify-content: center;">
+                                <img class=" w-full" src="./public/img/criminal-justice-carousal2.jpeg" alt="">
+                            </div>
+                        </div>
+                        <label for="carousel-1"
+                            class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                        <label for="carousel-3"
+                            class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+                        <!--Slide 3-->
+                        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true"
+                            hidden="">
+                        <div class="carousel-item absolute opacity-0" style="height:80vh;">
+                            <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-center"
+                                style="justify-content: center;">
+                                <img class=" w-full" src="./public/img/samarth1.jpeg" alt="">
+                            </div>
+                        </div>
+                        <label for="carousel-2"
+                            class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                        <label for="carousel-1"
+                            class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+
+                        <!-- slide indicators -->
+                        <ol class="carousel-indicators">
+                            <li class="inline-block mr-3">
+                                <label for="carousel-1"
+                                    class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
+                            </li>
+                            <li class="inline-block mr-3">
+                                <label for="carousel-2"
+                                    class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
+                            </li>
+                            <li class="inline-block mr-3">
+                                <label for="carousel-3"
+                                    class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
+                            </li>
+
+                        </ol>
+
+                    </div>
+                </div>
+
+
+                <!-- carousal-2 -->
+                <div class="carousel container mx-auto" style="max-width:500px;">
+                    <div class="carousel-inner relative overflow-hidden w-full">
+                        <!--Slide 1-->
+                        <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white p-2">
+                            Saksham
+                        </h1>
+                        <p
+                            class="max-w-2xl mb-6 font-light text-black font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl  dark:text-gray-400 p-2">
+                            Rehabilitating the street vendors of Delhi and Srinagar post lockdown. <br>
+                            <span style="color: red; text-decoration: underline;">
+                                <a class="hover:text-black" href="">
+                                    Learn more ></a>
+                            </span>
+
+                        </p>
+                        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true"
+                            hidden="" checked="checked">
+                        <div class="carousel-item absolute opacity-0" style="height:80vh;">
+                            <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
+                                style="justify-content: center;">
+                                <img class=" w-full" src="./public/img/saksham1.jpeg" alt="">
+                            </div>
+                        </div>
+
+                        <label for="carousel-3"
+                            class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                        <label for="carousel-2"
+                            class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+                        <!--Slide 2-->
+                        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true"
+                            hidden="">
+                        <div class="carousel-item absolute opacity-0 bg-cover bg-right" style="height:80vh;">
+                            <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
+                                style="justify-content: center;">
+                                <img class=" w-full" src="./public/img/criminal-justice-carousal2.jpeg" alt="">
+                            </div>
+                        </div>
+                        <label for="carousel-1"
+                            class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                        <label for="carousel-3"
+                            class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+                        <!--Slide 3-->
+                        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true"
+                            hidden="">
+                        <div class="carousel-item absolute opacity-0" style="height:80vh;">
+                            <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-center"
+                                style="justify-content: center;">
+                                <img class=" w-full" src="./public/img/criminal-justice-carousal3.jpeg" alt="">
+                            </div>
+                        </div>
+                        <label for="carousel-2"
+                            class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                        <label for="carousel-1"
+                            class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+
+                        <!-- slide indicators -->
+                        <ol class="carousel-indicators">
+                            <li class="inline-block mr-3">
+                                <label for="carousel-1"
+                                    class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
+                            </li>
+                            <li class="inline-block mr-3">
+                                <label for="carousel-2"
+                                    class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
+                            </li>
+                            <li class="inline-block mr-3">
+                                <label for="carousel-3"
+                                    class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
+                            </li>
+
+                        </ol>
+
+                    </div>
                 </div>
             </div>
         </div>
         </div>
     </section>
-    <!-- ******************* -->
 
+
+    <!-- carousal card end -->
     <!-- Footer section Start -->
     <footer class="bg-gray-900" aria-labelledby="footer-heading">
         <h2 id="footer-heading" class="sr-only">Footer</h2>
