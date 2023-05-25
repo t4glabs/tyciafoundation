@@ -1205,6 +1205,10 @@ video {
   font-weight: 100;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -1382,8 +1386,7 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-* CUSTOM CSS SECTION START */
-
+/* CUSTOM CSS SECTION START */
 
 /* carousel css start */
 
