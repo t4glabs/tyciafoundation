@@ -9,15 +9,17 @@
     <meta name="author" content="name">
     <meta name="description" content="description here">
     <meta name="keywords" content="keywords,here">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" /> -->
-    <!-- <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">  -->
-    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+
+    <!-- css link -->
+    <link href="dist/output.css" rel="stylesheet">
 
 </head>
 
-
 <body class="bg-white font-sans leading-normal tracking-normal">
+
     <!-- Header section start -->
+
     <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script> -->
     <div class="w-full text-gray-300 bg-black p-4">
         <div x-data="{ open: false }"
@@ -61,7 +63,7 @@
                         class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
                         <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800 text-black">
                             <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                href="./unnati.html">Unnati</a>
+                                href="#">Unnati</a>
                             <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                                 href="./digital-mount.html">Digital Mount</a>
 
@@ -74,7 +76,7 @@
                 <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="./youth-leadership.html">Youth Leadership</a>
                 <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="#">Livelihoods</a>
+                    href="./livelihoods.html">Livelihoods</a>
                 <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="./disaster-releif.html">Disaster Relief</a>
                 <div @click.away="open = false" class="relative" x-data="{ open: false }">
@@ -111,6 +113,8 @@
     <!-- Header section end -->
 
 
+
+    <!-- hero section start -->
     <!-- carousal section start -->
     <section>
         <div class="carousel bg-gray-500 relative container mx-auto" style="max-width:1600px;">
@@ -178,185 +182,212 @@
         </div>
     </section>
     <!-- carousal section end -->
+    <!-- Hero section end -->
 
 
-    <!-- carousal card start -->
-    <section class="bg-gray-100 px-2 py-2">
-
+    <!-- body section -->
+    <section class="bg-white px-2 py-2">
         <div class="container px-6 mx-auto">
-            <h1 class="text-center text-black font-bold text-4xl py-8">
-                Livelihoods
-            </h1>
-
             <div class="lg:flex lg:items-center">
 
-                <!-- carousal-1 -->
-                <div class="carousel  container mx-auto bg-white shadow-2xl rounded-lg my-10"
-                    style="max-width:500px;">
-                    <div class="carousel-inner relative overflow-hidden w-full p-4">
-                        <!--Slide 1-->
-                        <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white p-2">
-                            Samarth
-                        </h1>
-                        <p
-                            class="max-w-2xl mb-6 font-light text-black font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl  dark:text-gray-400 p-2">
-                            Business support and training for families who lost their primary earner to Covid. <br>
-                            <span style="color: red; text-decoration: underline;">
-                                <a class="hover:text-black" href="" target="_blank">Learn more
-                                    ></a>
-                            </span>
-                        </p>
-                        <img src="./public/img/samarth1.jpeg" alt="">
+                <!-- div-1 -->
+                <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-8 ">
+                    <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white p-2">
+                        Unnati</h1>
+                    <h4 class="text-2xl">Thematic: Education</h4>
+                    <h4 class="text-2xl">Beneficiaries: 170 female students hoping to pursue careers in STEM</h4>
+                    <h4 class="text-2xl">Timeline: Apr 2022 - Present</h4>
 
-                        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true"
-                            hidden="" checked="checked">
-                        <div class="carousel-item absolute opacity-0" style="height:80vh;">
-                            <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
-                                style="justify-content: center;">
-                                <img class=" w-full" src="./public/img/criminal-justice-carousal1.jpeg" alt="">
+                    <p
+                        class="max-w-2xl mb-6 font-light text-black font-thin lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 p-2 text-justify">
+                        Unnati is a STEM education program to supporting girls in 10th to 12th grade studying in the
+                        science stream in Delhi govt. schools who wish to pursue their tertiary education and build a
+                        career in the fields of science, technology, engineering and/or mathematics.
+                    </p>
+
+                    <p
+                        class="max-w-2xl mb-6 font-light text-black font-thin lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 p-2 text-justify">
+                        Participants are supported through need based academic support, additional learning materials,
+                        lifeskills trainings, and career guidance sessions. Then, participants in 10-12th grade will be
+                        provided with one time scholarship upon the completion of grade 12th to support their tertiary
+                        education.
+                    </p>
+
+                    <!-- <p
+                        class="max-w-2xl mb-6 font-light text-black font-thin lg:mb-8 md:text-lg lg:text-xl text-white p-2 ">
+                        <a class="bg-black p-2 rounded " href="./get-involve.html">Get Involve</a>
+                    </p> -->
+                </div>
+
+                <!-- div-2 -->
+                <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-8 ">
+                    <img src="https://graph.org/file/6204a4b8065453655b82d.jpg" alt="map">
+
+                </div>
+            </div>
+
+
+            <!-- unnati gallery -->
+            <div class="bg-white">
+                <div class="mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+                    <h2 class="text-black text-center text-3xl pb-4">Unnati Gallery</h2>
+
+                    <div
+                        class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+                        <a href="#" class="group">
+                            <div
+                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg"
+                                    alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
+                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
                             </div>
-                        </div>
-
-                        <label for="carousel-3"
-                            class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-                        <label for="carousel-2"
-                            class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
-
-                        <!--Slide 2-->
-
-                        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true"
-                            hidden="">
-                        <div class="carousel-item absolute opacity-0 bg-cover bg-right" style="height:80vh;">
-                            <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
-                                style="justify-content: center;">
-                                <img class=" w-full" src="./public/img/criminal-justice-carousal2.jpeg" alt="">
+                            <!-- <h3 class="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
+                            <p class="mt-1 text-lg font-medium text-gray-900">$48</p> -->
+                        </a>
+                        <a href="#" class="group">
+                            <div
+                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg"
+                                    alt="Olive drab green insulated bottle with flared screw lid and flat top."
+                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
                             </div>
-                        </div>
-                        <label for="carousel-1"
-                            class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-                        <label for="carousel-3"
-                            class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
-
-                        <!--Slide 3-->
-                        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true"
-                            hidden="">
-                        <div class="carousel-item absolute opacity-0" style="height:80vh;">
-                            <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-center"
-                                style="justify-content: center;">
-                                <img class=" w-full" src="./public/img/samarth1.jpeg" alt="">
+                            <!-- <h3 class="mt-4 text-sm text-gray-700">Nomad Tumbler</h3>
+                            <p class="mt-1 text-lg font-medium text-gray-900">$35</p> -->
+                        </a>
+                        <a href="#" class="group">
+                            <div
+                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg"
+                                    alt="Person using a pen to cross a task off a productivity paper card."
+                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
                             </div>
-                        </div>
-                        <label for="carousel-2"
-                            class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-                        <label for="carousel-1"
-                            class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+                            <!-- <h3 class="mt-4 text-sm text-gray-700">Focus Paper Refill</h3>
+                            <p class="mt-1 text-lg font-medium text-gray-900">$89</p> -->
+                        </a>
+                        <a href="#" class="group">
+                            <div
+                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg"
+                                    alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
+                            </div>
+                            <!-- <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
+                            <p class="mt-1 text-lg font-medium text-gray-900">$35</p> -->
+                        </a>
+
+                        <a href="#" class="group">
+                            <div
+                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg"
+                                    alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
+                            </div>
+                            <!-- <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
+                            <p class="mt-1 text-lg font-medium text-gray-900">$35</p> -->
+                        </a>
+
+                        <a href="#" class="group">
+                            <div
+                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg"
+                                    alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
+                            </div>
+                            <!-- <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
+                            <p class="mt-1 text-lg font-medium text-gray-900">$35</p> -->
+                        </a>
+
+                        <a href="#" class="group">
+                            <div
+                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg"
+                                    alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
+                            </div>
+                            <!-- <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
+                            <p class="mt-1 text-lg font-medium text-gray-900">$35</p> -->
+                        </a>
+
+                        <a href="#" class="group">
+                            <div
+                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg"
+                                    alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
+                            </div>
+                            <!-- <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
+                            <p class="mt-1 text-lg font-medium text-gray-900">$35</p> -->
+                        </a>
 
 
-                        <!-- slide indicators -->
-                        <ol class="carousel-indicators">
-                            <li class="inline-block mr-3">
-                                <label for="carousel-1"
-                                    class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
-                            </li>
-                            <li class="inline-block mr-3">
-                                <label for="carousel-2"
-                                    class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
-                            </li>
-                            <li class="inline-block mr-3">
-                                <label for="carousel-3"
-                                    class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
-                            </li>
-
-                        </ol>
-
+                        <a href="#" class="group">
+                            <div
+                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg"
+                                    alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
+                            </div>
+                            <!-- <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
+                            <p class="mt-1 text-lg font-medium text-gray-900">$35</p> -->
+                        </a>
+                        <!-- More products... -->
                     </div>
                 </div>
 
-
-                <!-- carousal-2 -->
-                <div class="carousel container mx-auto bg-white shadow-2xl rounded-lg my-10" style="max-width:500px;">
-                    <div class="carousel-inner relative overflow-hidden w-full p-4">
-                        <!--Slide 1-->
-                        <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white p-2">
-                            Saksham
-                        </h1>
-                        <p
-                            class="max-w-2xl mb-6 font-light text-black font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl  dark:text-gray-400 p-2">
-                            Rehabilitating the street vendors of Delhi and Srinagar post lockdown. <br>
-                            <span style="color: red; text-decoration: underline;">
-                                <a class="hover:text-black" href="">
-                                    Learn more ></a>
-                            </span>
-                        </p>
-                        <img src="./public/img/samarth3.jpeg" alt="">
-
-                        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true"
-                            hidden="" checked="checked">
-                        <div class="carousel-item absolute opacity-0" style="height:80vh;">
-                            <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
-                                style="justify-content: center;">
-                                <img class=" w-full" src="./public/img/saksham1.jpeg" alt="">
-                            </div>
-                        </div>
-
-                        <label for="carousel-3"
-                            class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-                        <label for="carousel-2"
-                            class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
-
-                        <!--Slide 2-->
-                        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true"
-                            hidden="">
-                        <div class="carousel-item absolute opacity-0 bg-cover bg-right" style="height:80vh;">
-                            <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
-                                style="justify-content: center;">
-                                <img class=" w-full" src="./public/img/criminal-justice-carousal2.jpeg" alt="">
-                            </div>
-                        </div>
-                        <label for="carousel-1"
-                            class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-                        <label for="carousel-3"
-                            class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
-
-                        <!--Slide 3-->
-                        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true"
-                            hidden="">
-                        <div class="carousel-item absolute opacity-0" style="height:80vh;">
-                            <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-center"
-                                style="justify-content: center;">
-                                <img class=" w-full" src="./public/img/criminal-justice-carousal3.jpeg" alt="">
-                            </div>
-                        </div>
-                        <label for="carousel-2"
-                            class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-                        <label for="carousel-1"
-                            class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+            </div>
+        </div>
+    </section>
 
 
-                        <!-- slide indicators -->
-                        <ol class="carousel-indicators">
-                            <li class="inline-block mr-3">
-                                <label for="carousel-1"
-                                    class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
-                            </li>
-                            <li class="inline-block mr-3">
-                                <label for="carousel-2"
-                                    class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
-                            </li>
-                            <li class="inline-block mr-3">
-                                <label for="carousel-3"
-                                    class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
-                            </li>
+    <!-- ayesha's story section  -->
+    <section>
+        <div class="container px-6 mx-auto">
+            <div class="lg:flex lg:items-center">
 
-                        </ol>
+                <!-- div-1 -->
+                <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-8 ">
+                    <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white p-2">
+                        Noor Ayesha's Story</h1>
 
-                    </div>
+                    <p class="text-justify">
+                        Noor Ayesha is a 17 year old student from Shaheen Bagh, Delhi. In Secondary School, Noor Ayesha
+                        has chosen to pursue the Physics Chemistry Math track, despite the fact that this subject is
+                        typically dominated by males.
+                    </p>
+
+                    <p
+                        class="max-w-2xl mb-6 font-light text-black font-thin lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 p-2 text-justify ">
+                        A few months into her studies, Noor Ayesha began to feel stressed and overwhelmed. She felt that
+                        the males in her class received more attention and a better quality of education. Noor Ayesha's
+                        family could not afford to pay for a tutor for her and she began to become worried about falling
+                        behind.
+                    </p>
+
+                    <p
+                        class="max-w-2xl mb-6 font-light text-black font-thin lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 p-2 text-justify">
+                        This was when Noor Ayesha signed up for Unnati. She attended prep sessions which helped her
+                        cover the topics she was struggling on, and also attended sessions on stress and time
+                        management.
+                    </p>
+
+                    <p
+                        class="max-w-2xl mb-6 font-light text-black font-thin lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 p-2 text-justify">
+                        Through Unnati, Noor Ayesha also had the opportunity to further explore her interest in
+                        technology, the field she hopes to work in one day. Now, Noor Ayesha feels she is better
+                        equipped to continue her studies, and hopes to attend the Indian Institute of Technology one
+                        day.
+                    </p>
+                </div>
+
+                <!-- div-2 -->
+                <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-8 ">
+                    <img src="https://graph.org/file/de09b9c12d066c96e29db.jpg" alt="map">
+
                 </div>
             </div>
         </div>
     </section>
-    <!-- carousal card end -->
-
+    <!--  -->
 
 
     <!-- Footer section Start -->
