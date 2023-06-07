@@ -1,31 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Tycia</title>
   <meta name="author" content="name">
   <meta name="description" content="description here">
   <meta name="keywords" content="keywords,here">
-
-  <!-- css link -->
   <link href="output.css" rel="stylesheet">
 
- <!-- font style link  -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
- 
+  
 </head>
 
 <body class="font-style bg-white font-sans leading-normal tracking-normal">
 
+
+
+
   <!-- Header section start -->
 
-  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script> -->
   <div class="w-full text-gray-300 bg-black p-4">
     <div x-data="{ open: false }"
       class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
@@ -47,11 +46,11 @@
       <nav :class="{'flex': open, 'hidden': !open}"
         class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
         <a class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-          href="./index.html">Home</a>
+          href="index.html">Home</a>
         <div @click.away="open = false" class="relative" x-data="{ open: false }">
           <button @click="open = !open"
             class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
-            <span>Education</span>
+            <a href="education.html">Education</a>
             <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
               class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
               <path fill-rule="evenodd"
@@ -67,22 +66,22 @@
             class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
             <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800 text-black">
               <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="./unnati.html">Unnati</a>
+                href="unnati.html">Unnati</a>
               <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="./digital-mount.html">Digital Mount</a>
+                href="digital-mount.html">Digital Mount</a>
 
             </div>
           </div>
         </div>
         <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-          href="#">Criminal Justice</a>
+          href="criminal-justice.html">Criminal Justice</a>
 
         <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-          href="./youth-leadership.html">Youth Leadership</a>
+          href="youth-leadership.html">Youth Leadership</a>
         <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-          href="./livelihoods.html">Livelihoods</a>
+          href="livelihoods.html">Livelihoods</a>
         <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-          href="./disaster-releif.html">Disaster Relief</a>
+          href="disaster-releif.html">Disaster Relief</a>
         <div @click.away="open = false" class="relative" x-data="{ open: false }">
           <button @click="open = !open"
             class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
@@ -102,11 +101,11 @@
             class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
             <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800 text-black">
               <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="./our-story.html">Our Story </a>
+                href="our-story.html">Our Story </a>
               <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="./team.html">Team</a>
+                href="team.html">Team</a>
               <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="./donate.html">Donate</a>
+                href="donate.html">Donate</a>
             </div>
           </div>
         </div>
