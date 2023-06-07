@@ -46,5 +46,12 @@
   /* carousel css end */
   
   
-  
+  .carousel-size{
+    width: 40%;
+  }
+
+
+  .font-style{
+    font-family: 'Poppins', sans-serif;
+  }
   /* CUSTOM CSS SECTION END */

@@ -1497,6 +1497,14 @@ video {
 
 /* carousel css end */
 
+.carousel-size{
+  width: 40%;
+}
+
+.font-style{
+  font-family: 'Poppins', sans-serif;
+}
+
 /* CUSTOM CSS SECTION END */
 
 .placeholder\:text-gray-400::-moz-placeholder {
@@ -1566,6 +1574,11 @@ video {
 .focus\:bg-gray-200:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.focus\:bg-gray-700:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
 .focus\:text-gray-900:focus {
