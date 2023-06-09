@@ -2,19 +2,19 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tycia</title>
-  <meta name="author" content="name">
-  <meta name="description" content="description here">
-  <meta name="keywords" content="keywords,here">
-  <link href="output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tycia</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <link href="output.css" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
-  
+
 </head>
 
 <body class="font-style bg-white font-sans leading-normal tracking-normal">
@@ -22,111 +22,112 @@
 
 
 
-  <!-- Header section start -->
+    <!-- Header section start -->
 
-  <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script> -->
-  <div class="w-full text-gray-300 bg-black p-4">
-    <div x-data="{ open: false }"
-      class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-      <div class="p-4 flex flex-row items-center justify-between">
-        <a href="index.html"
-          class="text-lg font-semibold tracking-widest text-white uppercase rounded-lg focus:outline-none focus:shadow-outline">TYCIA
-          Foundation</a>
-        <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
-          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-            <path x-show="!open" fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-              clip-rule="evenodd"></path>
-            <path x-show="open" fill-rule="evenodd"
-              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
-      </div>
-      <nav :class="{'flex': open, 'hidden': !open}"
-        class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
-        <a class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-          href="index.html">Home</a>
-        <div @click.away="open = false" class="relative" x-data="{ open: false }">
-          <button @click="open = !open"
-            class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
-            <a href="education.html">Education</a>
-            <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
-              class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-              <path fill-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </button>
-          <div x-show="open" x-transition:enter="transition ease-out duration-100"
-            x-transition:enter-start="transform opacity-0 scale-95"
-            x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75"
-            x-transition:leave-start="transform opacity-100 scale-100"
-            x-transition:leave-end="transform opacity-0 scale-95"
-            class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
-            <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800 text-black">
-              <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="unnati.html">Unnati</a>
-              <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="digital-mount.html">Digital Mount</a>
-
+    <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script> -->
+    <div class="w-full text-gray-300 bg-black p-4">
+        <div x-data="{ open: false }"
+            class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+            <div class="p-4 flex flex-row items-center justify-between">
+                <a href="index.html"
+                    class="text-lg font-semibold tracking-widest text-white uppercase rounded-lg focus:outline-none focus:shadow-outline">TYCIA
+                    Foundation</a>
+                <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                        <path x-show="!open" fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
             </div>
-          </div>
-        </div>
-        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-          href="criminal-justice.html">Criminal Justice</a>
+            <nav :class="{'flex': open, 'hidden': !open}"
+                class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+                <a class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="index.html">Home</a>
+                <div @click.away="open = false" class="relative" x-data="{ open: false }">
+                    <button @click="open = !open"
+                        class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                        <a href="education.html">Education</a>
+                        <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                            class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                        x-transition:enter-start="transform opacity-0 scale-95"
+                        x-transition:enter-end="transform opacity-100 scale-100"
+                        x-transition:leave="transition ease-in duration-75"
+                        x-transition:leave-start="transform opacity-100 scale-100"
+                        x-transition:leave-end="transform opacity-0 scale-95"
+                        class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+                        <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800 text-black">
+                            <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="unnati.html">Unnati</a>
+                            <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="digital-mount.html">Digital Mount</a>
 
-        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-          href="youth-leadership.html">Youth Leadership</a>
-        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-          href="livelihoods.html">Livelihoods</a>
-        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-          href="disaster-releif.html">Disaster Relief</a>
-        <div @click.away="open = false" class="relative" x-data="{ open: false }">
-          <button @click="open = !open"
-            class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
-            <span>More</span>
-            <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
-              class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-              <path fill-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </button>
-          <div x-show="open" x-transition:enter="transition ease-out duration-100"
-            x-transition:enter-start="transform opacity-0 scale-95"
-            x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75"
-            x-transition:leave-start="transform opacity-100 scale-100"
-            x-transition:leave-end="transform opacity-0 scale-95"
-            class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
-            <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800 text-black">
-              <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="our-story.html">Our Story </a>
-              <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="team.html">Team</a>
-              <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="donate.html">Donate</a>
-            </div>
-          </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="criminal-justice.html">Criminal Justice</a>
+
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="youth-leadership.html">Youth Leadership</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="livelihoods.html">Livelihoods</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="disaster-releif.html">Disaster Relief</a>
+                <div @click.away="open = false" class="relative" x-data="{ open: false }">
+                    <button @click="open = !open"
+                        class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                        <span>More</span>
+                        <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                            class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                        x-transition:enter-start="transform opacity-0 scale-95"
+                        x-transition:enter-end="transform opacity-100 scale-100"
+                        x-transition:leave="transition ease-in duration-75"
+                        x-transition:leave-start="transform opacity-100 scale-100"
+                        x-transition:leave-end="transform opacity-0 scale-95"
+                        class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+                        <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800 text-black">
+                            <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="our-story.html">Our Story </a>
+                            <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="team.html">Team</a>
+                            <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="donate.html">Donate</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
-      </nav>
     </div>
-  </div>
-  <!-- Header section end -->
+    <!-- Header section end -->
 
 
-    <!-- hero section start -->
-    <!-- carousal section start -->
+    <!-- Hero section start -->
     <section>
         <div class="carousel bg-gray-500 relative container mx-auto" style="max-width:1600px;">
             <div class="carousel-inner relative overflow-hidden w-full z-0">
                 <!--Slide 1-->
                 <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
                     checked="checked">
-                <div class="carousel-item absolute opacity-0" style="height:80vh;">
+                <div class="carousel-item absolute opacity-0" >
                     <div class="block h-full w-full mx-auto flex  md:pt-0 md:items-center bg-cover bg-white"
                         style="justify-content: center;">
-                        <img class=" w-full" src="./public/img/unnati-hero-carousel1.jpeg" alt="">
+                        <img class=" w-full h-full" src="./public/img/unnati-hero-carousel1.jpeg" alt="">
                     </div>
                 </div>
 
@@ -137,10 +138,10 @@
 
                 <!--Slide 2-->
                 <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item absolute opacity-0 bg-cover bg-right" style="height:80vh;">
+                <div class="carousel-item absolute opacity-0 bg-cover bg-right" >
                     <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
                         style="justify-content: center;">
-                        <img class=" w-full" src="./public/img/unnati-hero-carousel2.jpeg" alt="">
+                        <img class=" w-full h-full" src="./public/img/unnati-hero-carousel2.jpeg" alt="">
                     </div>
                 </div>
                 <label for="carousel-1"
@@ -150,10 +151,10 @@
 
                 <!--Slide 3-->
                 <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item absolute opacity-0" style="height:80vh;">
+                <div class="carousel-item absolute opacity-0" >
                     <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-center"
                         style="justify-content: center;">
-                        <img class=" w-full" src="./public/img/unnati-hero-carousel3.jpeg" alt="">
+                        <img class=" w-full h-full" src="./public/img/unnati-hero-carousel3.jpeg" alt="">
                     </div>
                 </div>
                 <label for="carousel-2"
@@ -164,10 +165,10 @@
 
                 <!--Slide 4-->
                 <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item absolute opacity-0" style="height:80vh;">
+                <div class="carousel-item absolute opacity-0" >
                     <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-center"
                         style="justify-content: center;">
-                        <img class=" w-full" src="./public/img/unnati-hero-carousel4.jpeg" alt="">
+                        <img class=" w-full h-full" src="./public/img/unnati-hero-carousel4.jpeg" alt="">
                     </div>
                 </div>
                 <label for="carousel-2"
@@ -178,10 +179,10 @@
 
                 <!--Slide 5-->
                 <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item absolute opacity-0" style="height:80vh;">
+                <div class="carousel-item absolute opacity-0" >
                     <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-center"
                         style="justify-content: center;">
-                        <img class=" w-full" src="./public/img/unnati-hero-carousel5.jpeg" alt="">
+                        <img class=" w-full h-full" src="./public/img/unnati-hero-carousel5.jpeg" alt="">
                     </div>
                 </div>
                 <label for="carousel-2"
@@ -193,10 +194,10 @@
 
                 <!--Slide 6-->
                 <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item absolute opacity-0" style="height:80vh;">
+                <div class="carousel-item absolute opacity-0" >
                     <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-center"
                         style="justify-content: center;">
-                        <img class=" w-full" src="./public/img/unnati-hero-carousel6.jpeg" alt="">
+                        <img class=" w-full h-full" src="./public/img/unnati-hero-carousel6.jpeg" alt="">
                     </div>
                 </div>
                 <label for="carousel-2"
@@ -207,10 +208,10 @@
 
                 <!--Slide 7-->
                 <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item absolute opacity-0" style="height:80vh;">
+                <div class="carousel-item absolute opacity-0" >
                     <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-center"
                         style="justify-content: center;">
-                        <img class=" w-full" src="./public/img/unnati-hero-carousel7.jpeg" alt="">
+                        <img class=" w-full h-full" src="./public/img/unnati-hero-carousel7.jpeg" alt="">
                     </div>
                 </div>
                 <label for="carousel-2"
@@ -221,10 +222,10 @@
 
                 <!--Slide 8-->
                 <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item absolute opacity-0" style="height:80vh;">
+                <div class="carousel-item absolute opacity-0" >
                     <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-center"
                         style="justify-content: center;">
-                        <img class=" w-full" src="./public/img/unnati-hero-carousel8.jpeg" alt="">
+                        <img class=" w-full h-full" src="./public/img/unnati-hero-carousel8.jpeg" alt="">
                     </div>
                 </div>
                 <label for="carousel-2"
@@ -255,7 +256,6 @@
             </div>
         </div>
     </section>
-    <!-- carousal section end -->
     <!-- Hero section end -->
 
 
@@ -299,117 +299,65 @@
 
                 </div>
             </div>
-
-
-            <!-- unnati gallery -->
-            <div class="bg-white">
-                <div class="mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-                    <h2 class="text-black text-center text-3xl pb-4">Unnati Gallery</h2>
-
-                    <div
-                        class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-                        <a href="#" class="group">
-                            <div
-                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-                                <img src="./public/img/unnati-gallery1.jpeg"
-                                    alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
-                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
-                            </div>
-                            <!-- <h3 class="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
-                            <p class="mt-1 text-lg font-medium text-gray-900">$48</p> -->
-                        </a>
-                        <a href="#" class="group">
-                            <div
-                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-                                <img src="./public/img/unnati-gallery2.jpeg"
-                                    alt="Olive drab green insulated bottle with flared screw lid and flat top."
-                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
-                            </div>
-                            <!-- <h3 class="mt-4 text-sm text-gray-700">Nomad Tumbler</h3>
-                            <p class="mt-1 text-lg font-medium text-gray-900">$35</p> -->
-                        </a>
-                        <a href="#" class="group">
-                            <div
-                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-                                <img src="./public/img/unnati-gallery3.jpeg"
-                                    alt="Person using a pen to cross a task off a productivity paper card."
-                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
-                            </div>
-                            <!-- <h3 class="mt-4 text-sm text-gray-700">Focus Paper Refill</h3>
-                            <p class="mt-1 text-lg font-medium text-gray-900">$89</p> -->
-                        </a>
-                        <a href="#" class="group">
-                            <div
-                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-                                <img src="./public/img/unnati-gallery4.jpeg" alt=""
-                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
-                            </div>
-
-                        </a>
-
-
-
-
-                        <!-- <a href="#" class="group">
-                            <div
-                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-                                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg"
-                                    alt="Hand holding black machined steel mechanical pencil with brass tip and top."
-                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
-                            </div>
-                          
-                        </a>
-
-                        <a href="#" class="group">
-                            <div
-                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-                                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg"
-                                    alt="Hand holding black machined steel mechanical pencil with brass tip and top."
-                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
-                            </div>
-                           
-                        </a>
-
-                        <a href="#" class="group">
-                            <div
-                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-                                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg"
-                                    alt="Hand holding black machined steel mechanical pencil with brass tip and top."
-                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
-                            </div>
-                        
-                        </a>
-
-                        <a href="#" class="group">
-                            <div
-                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-                                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg"
-                                    alt="Hand holding black machined steel mechanical pencil with brass tip and top."
-                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
-                            </div>
-           
-                        </a>
-
-
-                        <a href="#" class="group">
-                            <div
-                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-                                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg"
-                                    alt="Hand holding black machined steel mechanical pencil with brass tip and top."
-                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
-                            </div>
-                   
-                        </a> -->
-
-                    </div>
-                </div>
-
-            </div>
         </div>
     </section>
 
 
+    <!-- unnati in gallery -->
+    <section class="my-14">
+        <h1 class="text-center text-black font-bold text-3xl py-8">
+            Unnati in picture
+        </h1>
+        <div class="flex items-center justify-center bg-gray-500 relative container mx-auto" style="max-width:1600px;">
 
+            <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
+
+                <!-- slides -->
+                <div class="carousel">
+                    <!-- slide-1 -->
+                    <div x-show="activeSlide === 0" class="carousel-item">
+                        <img class="w-full" src="./public/img/unnati-gallery1.jpeg" alt="Image 1">
+                    </div>
+
+                    <!-- slide-2 -->
+                    <div x-show="activeSlide === 1" class="carousel-item">
+                        <img class="w-full" src="./public/img/unnati-gallery2.jpeg" alt="Image 2">
+                    </div>
+
+                    <!-- slide-3 -->
+                    <div x-show="activeSlide === 2" class="carousel-item">
+                        <img class="w-full" src="./public/img/unnati-gallery3.jpeg" alt="Image 3">
+                    </div>
+
+                    <!-- slide-4 -->
+                    <div x-show="activeSlide === 2" class="carousel-item">
+                        <img class="w-full" src="./public/img/unnati-gallery4.jpeg" alt="Image 3">
+                    </div>
+                </div>
+
+                <!-- controllers -->
+                <div class="carousel-controls">
+                    <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
+                        class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
+                        ‹
+                    </button>
+                    <button @click="activeSlide = (activeSlide + 1) % 3"
+                        class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+                        ›
+                    </button>
+                </div>
+                <!-- indicators -->
+                <div class="carousel-indicators mt-2 flex justify-center">
+                    <template x-for="(slide, index) in 3">
+                        <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
+                            class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
+                    </template>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- unnati in picture end -->
 
     <!-- ayesha's story section  -->
     <section>
@@ -532,11 +480,11 @@
 
             </div>
             <p class="mt-8 text-xs leading-5  md:order-1 md:mt-0 text-gray-300">
-                built with 🤍 by <a href="https://t4glabs.discourse.group/u?cards=yes&group=Tech4Good-Fellows" target="_blank"
-                  class="text-gray-300 hover:text-white hover:underline">Tech4Good Fellows</a> & Hosted Freely on <a href="#"
-                  class="text-gray-300 hover:text-white hover:underline">Github Pages</a>
+                built with 🤍 by <a href="https://t4glabs.discourse.group/u?cards=yes&group=Tech4Good-Fellows"
+                    target="_blank" class="text-gray-300 hover:text-white hover:underline">Tech4Good Fellows</a> &
+                Hosted Freely on <a href="#" class="text-gray-300 hover:text-white hover:underline">Github Pages</a>
                 </a>
-              </p>
+            </p>
 
         </div>
     </footer>
