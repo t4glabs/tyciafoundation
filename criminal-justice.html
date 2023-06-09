@@ -9,19 +9,19 @@
   <meta name="description" content="description here">
   <meta name="keywords" content="keywords,here">
   <link href="output.css" rel="stylesheet">
- <!-- font style link  -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <!-- font style link  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
- 
+
 </head>
 
 <body class="font-style bg-white font-sans leading-normal tracking-normal">
 
 
 
- <!-- Header section start -->
+  <!-- Header section start -->
 
   <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script> -->
   <div class="w-full text-gray-300 bg-black p-4">
@@ -117,34 +117,61 @@
 
   <!-- hero start -->
   <section>
-    <div class="flex items-center justify-center bg-gray-500 relative container mx-auto" style="max-width:1600px;">
-      <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full" style="height:80vh;">
+    <div class="flex items-center justify-center relative container mx-auto" style="max-width:1600px;">
+      <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full" >
         <!-- slides -->
         <div class="carousel">
+
+          <!-- slide-1 -->
           <div x-show="activeSlide === 0" class="carousel-item">
             <img class="w-full" src="./public/img/criminal-justice-carousal1.jpeg" alt="Image 1">
           </div>
+
+          <!-- slide-2 -->
           <div x-show="activeSlide === 1" class="carousel-item">
             <img class="w-full" src="./public/img/criminal-justice-carousal2.jpeg" alt="Image 2">
           </div>
+
+          <!-- slide-3 -->
           <div x-show="activeSlide === 2" class="carousel-item">
             <img class="w-full" src="./public/img/criminal-justice-carousal3.jpeg" alt="Image 3">
           </div>
+
+          <!-- slide-4 -->
+          <div x-show="activeSlide === 3" class="carousel-item">
+            <img class="w-full" src="./public/img/criminal-justice-hero4.jpeg" alt="Image 4">
+          </div>
+
+          <!-- slide-5 -->
+          <div x-show="activeSlide === 4" class="carousel-item">
+            <img class="w-full" src="./public/img/criminal-justice-hero5.jpeg" alt="Image 5">
+          </div>
+
+          <!-- slide-6 -->
+          <div x-show="activeSlide === 5" class="carousel-item">
+            <img class="w-full" src="./public/img/criminal-justice-hero6.jpeg" alt="Image 6">
+          </div>
+
+          <!-- slide-7 -->
+          <div x-show="activeSlide === 6" class="carousel-item">
+            <img class="w-full" src="./public/img/criminal-justice-hero7.jpeg" alt="Image 7">
+          </div>
         </div>
+
         <!-- controllers -->
         <div class="carousel-controls">
-          <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
+          <button @click="activeSlide = (activeSlide - 1 + 7) % 7"
             class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
             ‹
           </button>
-          <button @click="activeSlide = (activeSlide + 1) % 3"
+          <button @click="activeSlide = (activeSlide + 1) % 7"
             class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
             ›
           </button>
         </div>
         <!-- indicators -->
         <div class="carousel-indicators mt-2 flex justify-center">
-          <template x-for="(slide, index) in 3">
+          <template x-for="(slide, index) in 7">
             <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
               class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
           </template>
@@ -156,7 +183,6 @@
   <!-- hero end -->
 
 
-  
   <!-- section 1 -->
   <section class="bg-gray-100 px-2 py-2">
 
@@ -172,8 +198,7 @@
           <h1 class="text-xl font-semibold text-gray-800 capitalize lg:text-xl  p-2">Second Chance
             Fellowship
           </h1>
-          <p
-            class="max-w-2xl mb-6 font-light text-black font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl  p-2">
+          <p class="max-w-2xl mb-6 font-light text-black font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl  p-2">
             Incubator for changemakers in criminal justice space
             <br>
             <span style="color: red; text-decoration: underline;">
@@ -181,25 +206,32 @@
                 ></a>
             </span>
           </p>
+
           <!-- section 1 div 1 carousel 1 -->
           <div class="flex items-center justify-center bg-gray-500 relative container mx-auto"
             style="max-width:1600px;">
             <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
               <!-- slides -->
               <div class="carousel">
+
+                <!-- slide-1 -->
                 <div x-show="activeSlide === 0" class="carousel-item">
-                  <img class="w-full" style="height:350px" src="./public/img/criminal-justice-carousal1.jpeg"
-                    alt="Image 1">
+                  <img class="w-full"  src="./public/img/second-chance-fellow1.jpeg" alt="Image 1">
                 </div>
+
+                <!-- slide-2 -->
                 <div x-show="activeSlide === 1" class="carousel-item">
-                  <img class="w-full h-full" style="height:350px" src="./public/img/criminal-justice-carousal2.jpeg"
+                  <img class="w-full h-full"  src="./public/img/second-chance-fellow2.jpeg"
                     alt="Image 2">
                 </div>
+
+                <!-- slide-3 -->
                 <div x-show="activeSlide === 2" class="carousel-item">
-                  <img class="w-full h-full" style="height:350px" src="./public/img/criminal-justice-carousal3.jpeg"
+                  <img class="w-full h-full"  src="./public/img/second-chance-fellow.jpeg"
                     alt="Image 3">
                 </div>
               </div>
+
               <!-- controllers -->
               <div class="carousel-controls">
                 <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
@@ -211,6 +243,7 @@
                   ›
                 </button>
               </div>
+
               <!-- indicators -->
               <div class="carousel-indicators mt-2 flex justify-center">
                 <template x-for="(slide, index) in 3">
@@ -221,13 +254,13 @@
             </div>
           </div>
         </div>
+
         <!-- section 1 div 2-->
         <div class="flex flex-col container mx-auto bg-white shadow-2xl rounded my-10 p-4" style="max-width:500px;">
           <h1 class="text-xl font-semibold text-gray-800 capitalize lg:text-xl  p-2">Project Unlearn
             Fellowship
           </h1>
-          <p
-            class="max-w-2xl mb-6 font-light text-black font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl  p-2">
+          <p class="max-w-2xl mb-6 font-light text-black font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl  p-2">
             Sexual respect, addiction management, and civics training for inmates
             <br>
             <span style="color: red; text-decoration: underline;">
@@ -235,22 +268,28 @@
                 Learn more ></a>
             </span>
           </p>
+
           <!-- section 1 div 1 carousel 1 -->
           <div class="flex items-center justify-center bg-gray-500 relative container mx-auto"
             style="max-width:1600px;">
             <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
               <!-- slides -->
               <div class="carousel">
+
+                <!-- slide-1 -->
                 <div x-show="activeSlide === 0" class="carousel-item">
-                  <img class="w-full" style="height:350px" src="./public/img/criminal-justice-carousal1.jpeg"
-                    alt="Image 1">
+                  <img class="w-full"  src="./public/img/project-unlearn1.jpeg" alt="Image 1">
                 </div>
+
+                <!-- slide-2 -->
                 <div x-show="activeSlide === 1" class="carousel-item">
-                  <img class="w-full h-full" style="height:350px" src="./public/img/criminal-justice-carousal2.jpeg"
+                  <img class="w-full h-full"  src="./public/img/project-unlearn2.jpeg"
                     alt="Image 2">
                 </div>
+
+                <!-- slide-3 -->
                 <div x-show="activeSlide === 2" class="carousel-item">
-                  <img class="w-full h-full" style="height:350px" src="./public/img/criminal-justice-carousal3.jpeg"
+                  <img class="w-full h-full"  src="./public/img/project-unlearn3.jpeg"
                     alt="Image 3">
                 </div>
               </div>
@@ -276,9 +315,10 @@
           </div>
         </div>
       </div>
-
     </div>
+
   </section>
+
 
   <!-- section 2 -->
   <section class="bg-gray-100 px-2 py-2">
@@ -290,8 +330,7 @@
         <div class="flex flex-col container mx-auto bg-white shadow-2xl rounded my-10 p-4" style="max-width:500px;">
           <h1 class="text-xl font-semibold text-gray-800 capitalize lg:text-xl  p-2">Kunji
           </h1>
-          <p
-            class="max-w-2xl mb-6 font-light text-black font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl  p-2">
+          <p class="max-w-2xl mb-6 font-light text-black font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl  p-2">
             Rehabilitation hotline to connect recently released inmates to resources.
             <br>
             <span style="color: red; text-decoration: underline;">
@@ -299,22 +338,31 @@
                 ></a>
             </span>
           </p>
+
           <!-- section 1 div 1 carousel 1 -->
           <div class="flex items-center justify-center bg-gray-500 relative container mx-auto"
             style="max-width:1600px;">
             <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
+
               <!-- slides -->
               <div class="carousel">
+
+                <!-- slide-1 -->
                 <div x-show="activeSlide === 0" class="carousel-item">
-                  <img class="w-full" style="height:350px" src="./public/img/criminal-justice-carousal1.jpeg"
-                    alt="Image 1">
+                  <img class="w-full" src="./public/img/kunji.jpeg" alt="Image 1">
                 </div>
+
+                <!-- slide-2 -->
                 <div x-show="activeSlide === 1" class="carousel-item">
-                  <img class="w-full h-full" style="height:350px" src="./public/img/criminal-justice-carousal2.jpeg"
+                  <img class="w-full h-full" style="height:350px"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCPXeCCuwgBjzcuKF5gFtlleI5Nah7G63YTfPcy0A&s"
                     alt="Image 2">
                 </div>
+
+                <!-- slide-3 -->
                 <div x-show="activeSlide === 2" class="carousel-item">
-                  <img class="w-full h-full" style="height:350px" src="./public/img/criminal-justice-carousal3.jpeg"
+                  <img class="w-full h-full" style="height:350px"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCPXeCCuwgBjzcuKF5gFtlleI5Nah7G63YTfPcy0A&s"
                     alt="Image 3">
                 </div>
               </div>
@@ -344,8 +392,7 @@
           <h1 class="text-xl font-semibold text-gray-800 capitalize lg:text-xl  p-2">Better Life Prison
             School
           </h1>
-          <p
-            class="max-w-2xl mb-6 font-light text-black font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl  p-2">
+          <p class="max-w-2xl mb-6 font-light text-black font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl  p-2">
             Contextualized literacy and academic learning for inmates in Delhi and Gurgaon.
             <br>
             <span style="color: red; text-decoration: underline;">
@@ -353,25 +400,33 @@
                 Learn more ></a>
             </span>
           </p>
+
           <!-- section 1 div 1 carousel 1 -->
           <div class="flex items-center justify-center bg-gray-500 relative container mx-auto"
             style="max-width:1600px;">
             <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
+
               <!-- slides -->
               <div class="carousel">
+
+                <!-- slide-1 -->
                 <div x-show="activeSlide === 0" class="carousel-item">
-                  <img class="w-full" style="height:350px" src="./public/img/criminal-justice-carousal1.jpeg"
-                    alt="Image 1">
+                  <img class="w-full" src="./public/img/better-life-prison1.jpeg" alt="Image 1">
                 </div>
+
+                <!-- slide-2 -->
                 <div x-show="activeSlide === 1" class="carousel-item">
-                  <img class="w-full h-full" style="height:350px" src="./public/img/criminal-justice-carousal2.jpeg"
+                  <img class="w-full h-full" src="./public/img/better-life-prison2.jpeg"
                     alt="Image 2">
                 </div>
+
+                <!-- slide-3 -->
                 <div x-show="activeSlide === 2" class="carousel-item">
-                  <img class="w-full h-full" style="height:350px" src="./public/img/criminal-justice-carousal3.jpeg"
+                  <img class="w-full h-full" src="./public/img/better-life-prison3.jpeg"
                     alt="Image 3">
                 </div>
               </div>
+
               <!-- controllers -->
               <div class="carousel-controls">
                 <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
@@ -383,6 +438,7 @@
                   ›
                 </button>
               </div>
+
               <!-- indicators -->
               <div class="carousel-indicators mt-2 flex justify-center">
                 <template x-for="(slide, index) in 3">
@@ -398,6 +454,8 @@
     </div>
   </section>
   <!-- new carousel end -->
+
+
 
   <!-- Footer section Start -->
   <footer class="bg-gray-900" aria-labelledby="footer-heading">
