@@ -643,6 +643,10 @@ video {
   margin-bottom: auto;
 }
 
+.mb-40 {
+  margin-bottom: 10rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -717,6 +721,10 @@ video {
 
 .aspect-\[3\/2\] {
   aspect-ratio: 3/2;
+}
+
+.h-1\/4 {
+  height: 25%;
 }
 
 .h-10 {
@@ -1447,6 +1455,10 @@ video {
 #carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet {
   color: #000;
   /*Set to match the Tailwind colour you want the active one to be */
+}
+
+#hero-carousel {
+  height: 60px;
 }
 
 /* carousel css end */

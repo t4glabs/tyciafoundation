@@ -43,6 +43,11 @@
   /*Set to match the Tailwind colour you want the active one to be */
 }
 
+
+#hero-carousel {
+  height: 60px;
+}
+
 /* carousel css end */
 
 
