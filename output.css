@@ -643,10 +643,6 @@ video {
   margin-bottom: auto;
 }
 
-.mb-40 {
-  margin-bottom: 10rem;
-}
-
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -721,10 +717,6 @@ video {
 
 .aspect-\[3\/2\] {
   aspect-ratio: 3/2;
-}
-
-.h-1\/4 {
-  height: 25%;
 }
 
 .h-10 {
