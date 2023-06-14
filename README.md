@@ -10,7 +10,6 @@ Website for Bastar Se Bazaar Tak
 `npm install`
 
 ## Build CSS
-
 `npm run build-css`
 
 After running the build-css command, edit/create html files in the root folder.
