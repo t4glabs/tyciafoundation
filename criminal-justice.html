@@ -183,21 +183,26 @@
   <!-- hero end -->
 
 
-  <!--  card  section-->
-  <section class="bg-gray-100 px-2 py-2">
 
-    <div class="container lg:px-6 mx-auto">
-      <h1 class="text-center text-black font-bold lg:text-4xl text-2xl py-3">
-        Criminal Justice
-      </h1>
-      <div class="lg:flex lg:items-center m-6 justify-between max-w-7xl">
-        <!-- card-1-->
-        <div class="flex flex-col container  bg-white shadow-2xl rounded-lg my-10 p-4 lg:m-4"
-          style="max-width:500px; max-height: 750px;">
-          <h1 class="text-xl font-semi-bold text-gray-800 capitalize p-2"> Second Chance
+  <!-- card -->
+  <div class="bg-gray-200 py-4 lg:py-12 ">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 my-4">
+      <div class="mx-auto max-w-2xl">
+        <h1 class="text-2xl lg:text-4xl font-bold text-gray-800 capitalize text-center lg:pt-4">
+          Criminal Justice</h1>
+      </div>
+
+      <ul role="list"
+        class="mx-auto mt-14 grid max-w-2xl grid-cols-1 gap-x-16 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+
+        <!--   1 card -->
+        <li class="flex justify-center bg-white flex-col p-4 rounded-lg lg:mx-10">
+
+          <h2 class="text-lg text-center font-bold tracking-tight text-gray-900 sm:text-lg">Second Chance
             Fellowship
 
-          </h1>
+          </h2>
+
           <p
             class="max-w-2xl mb-6 font-light text-black text-justify font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl   p-2">
             Incubator for changemakers in criminal justice space<br>
@@ -207,53 +212,49 @@
             </span>
           </p>
 
-
-          <!-- section 1 div 1 carousel 1 -->
-          <div class="flex items-center justify-center bg-gray-500 relative container mx-auto"
-            style="max-width:1600px;">
-            <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
-              <!-- slides -->
-              <div class="carousel">
-                <div x-show="activeSlide === 0" class="carousel-item">
-                  <img class="w-full" src="./public/img/second-chance-fellow.jpeg" alt="Image 1">
-                </div>
-                <div x-show="activeSlide === 1" class="carousel-item">
-                  <img class="w-full h-full" src="./public/img/second-chance-fellow1.jpeg" alt="Image 2">
-                </div>
-                <div x-show="activeSlide === 2" class="carousel-item">
-                  <img class="w-full h-full" src="./public/img/second-chance-fellow2.jpeg" alt="Image 3">
-                </div>
+          <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
+            <!-- slides -->
+            <div class="carousel">
+              <div x-show="activeSlide === 0" class="carousel-item">
+                <img class="w-full " src="./public/img/second-chance-fellow.jpeg" alt="Image 1">
               </div>
-              <!-- controllers -->
-              <div class="carousel-controls">
-                <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
-                  class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
-                  ‹
-                </button>
-                <button @click="activeSlide = (activeSlide + 1) % 3"
-                  class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
-                  ›
-                </button>
+              <div x-show="activeSlide === 1" class="carousel-item">
+                <img class="w-full " src="./public/img/second-chance-fellow1.jpeg" alt="Image 2">
               </div>
-              <!-- indicators -->
-              <div class="carousel-indicators mt-2 flex justify-center">
-                <template x-for="(slide, index) in 3">
-                  <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
-                    class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
-                </template>
+              <div x-show="activeSlide === 2" class="carousel-item">
+                <img class="w-full " src="./public/img/second-chance-fellow2.jpeg" alt="Image 3">
               </div>
             </div>
+            <!-- controllers -->
+            <div class="carousel-controls">
+              <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
+                class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
+                ‹
+              </button>
+              <button @click="activeSlide = (activeSlide + 1) % 3"
+                class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+                ›
+              </button>
+            </div>
+            <!-- indicators -->
+            <div class="carousel-indicators mt-2 flex justify-center">
+              <template x-for="(slide, index) in 3">
+                <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
+                  class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
+              </template>
+            </div>
           </div>
-        </div>
+
+        </li>
 
 
+        <!-- 2 card -->
+        <li class="flex justify-center bg-white flex-col p-4 rounded-lg  lg:mx-10">
 
-        <!-- card 2--->
-        <div class="flex flex-col container bg-white shadow-2xl rounded-lg my-10 p-4 lg:m-4"
-          style="max-width:500px; max-height: 750px;">
-          <h1 class="font-semi-bold text-gray-800 capitalize text-xl p-2">
-            Project Unlearn
-            Fellowship </h1>
+          <h2 class="text-lg text-center font-bold tracking-tight text-gray-900 sm:text-lg"> Project Unlearn
+            Fellowship
+          </h2>
+
           <p
             class="max-w-2xl mb-6 font-light text-black text-justify font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl   p-2">
             Sexual respect, addiction management, and civics training for inmates
@@ -264,164 +265,136 @@
             </span>
           </p>
 
-          <!-- section 1 div 1 carousel 1 -->
-          <div class="flex items-center justify-center bg-gray-500 relative container mx-auto"
-            style="max-width:1600px;">
-            <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
-              <!-- slides -->
-              <div class="carousel">
-                <div x-show="activeSlide === 0" class="carousel-item">
-                  <img class="w-full" src="./public/img/project-unlearn1.jpeg" alt="Image 1">
-                </div>
-                <div x-show="activeSlide === 1" class="carousel-item">
-                  <img class="w-full h-full" src="./public/img/project-unlearn2.jpeg" alt="Image 2">
-                </div>
-                <div x-show="activeSlide === 2" class="carousel-item">
-                  <img class="w-full h-full" src="./public/img/project-unlearn3.jpeg" alt="Image 3">
-                </div>
+          <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
+            <!-- slides -->
+            <div class="carousel">
+              <div x-show="activeSlide === 0" class="carousel-item">
+                <img class="w-full" src="./public/img/project-unlearn1.jpeg" alt="Image 1">
               </div>
-              <!-- controllers -->
-              <div class="carousel-controls">
-                <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
-                  class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
-                  ‹
-                </button>
-                <button @click="activeSlide = (activeSlide + 1) % 3"
-                  class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
-                  ›
-                </button>
+              <div x-show="activeSlide === 1" class="carousel-item">
+                <img class="w-full h-full" src="./public/img/project-unlearn2.jpeg" alt="Image 2">
               </div>
-              <!-- indicators -->
-              <div class="carousel-indicators mt-2 flex justify-center">
-                <template x-for="(slide, index) in 3">
-                  <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
-                    class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
-                </template>
+              <div x-show="activeSlide === 2" class="carousel-item">
+                <img class="w-full h-full" src="./public/img/project-unlearn3.jpeg" alt="Image 3">
               </div>
             </div>
+            <!-- controllers -->
+            <div class="carousel-controls">
+              <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
+                class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
+                ‹
+              </button>
+              <button @click="activeSlide = (activeSlide + 1) % 3"
+                class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+                ›
+              </button>
+            </div>
+            <!-- indicators -->
+            <div class="carousel-indicators mt-2 flex justify-center">
+              <template x-for="(slide, index) in 3">
+                <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
+                  class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
+              </template>
+            </div>
           </div>
-        </div>
 
-      </div>
-
-    </div>
-  </section>
+        </li>
 
 
-  <!-- new card 2 -->
-  <section class="bg-gray-100 px-2 py-2">
+        <!-- card 3 -->
+        <li class="flex justify-center bg-white flex-col p-4 rounded-lg lg:mx-10">
 
-    <div class="container lg:px-6 mx-auto">
+          <h2 class="text-lg text-center font-bold tracking-tight text-gray-900 sm:text-lg"> Kunji
 
-      <div class="lg:flex lg:items-center m-6 justify-between">
-        <!-- card-3-->
-        <div class="flex flex-col container  bg-white shadow-2xl rounded-lg my-10 p-4 lg:m-4"
-          style="max-width:500px; max-height: 750px;">
-          <h1 class="font-semi-bold text-xl text-gray-800 capitalize p-2 ">Kunji
-          </h1>
+          </h2>
+
           <p
             class="max-w-2xl mb-6 font-light text-black text-justify font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl   p-2">
             Rehabilitation hotline to connect recently released inmates to resources. <br>
-
           </p>
 
-
-          <!-- section 1 div 1 carousel 1 -->
-          <div class="flex items-center justify-center bg-gray-500 relative container mx-auto"
-            style="max-width:1600px;">
-            <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
-              <!-- slides -->
-              <div class="carousel">
-                <div x-show="activeSlide === 0" class="carousel-item">
-                  <img class="w-full" src="./public/img/kunji.jpeg" alt="Image 1">
-                </div>
-                <!-- <div x-show="activeSlide === 1" class="carousel-item">
-                  <img class="w-full h-full" src="./public/img/menstrual-health2.jpeg" alt="Image 2">
-                </div>
-                <div x-show="activeSlide === 2" class="carousel-item">
-                  <img class="w-full h-full" src="./public/img/menstrual-health3.jpeg" alt="Image 3">
-                </div> -->
-              </div>
-              <!-- controllers -->
-              <div class="carousel-controls">
-                <button @click="activeSlide = (activeSlide - 1 + 1) % 1"
-                  class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
-                  ‹
-                </button>
-                <button @click="activeSlide = (activeSlide + 1) % 1"
-                  class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
-                  ›
-                </button>
-              </div>
-              <!-- indicators -->
-              <div class="carousel-indicators mt-2 flex justify-center">
-                <template x-for="(slide, index) in 1">
-                  <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
-                    class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
-                </template>
+          <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
+            <!-- slides -->
+            <div class="carousel">
+              <div x-show="activeSlide === 0" class="carousel-item">
+                <img class="w-full" src="./public/img/kunji.jpeg" alt="Image 1">
               </div>
             </div>
+            <!-- controllers -->
+            <div class="carousel-controls">
+              <button @click="activeSlide = (activeSlide - 1 + 1) % 1"
+                class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
+                ‹
+              </button>
+              <button @click="activeSlide = (activeSlide + 1) % 1"
+                class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+                ›
+              </button>
+            </div>
+            <!-- indicators -->
+            <div class="carousel-indicators mt-2 flex justify-center">
+              <template x-for="(slide, index) in 1">
+                <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
+                  class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
+              </template>
+            </div>
           </div>
-        </div>
+
+        </li>
 
 
+        <!-- 4 card -->
+        <li class="flex justify-center bg-white flex-col p-4 rounded-lg  lg:mx-10">
 
-        <!-- card-4-->
-        <div class="flex flex-col container bg-white shadow-2xl rounded-lg my-10 p-4 lg:m-4"
-          style="max-width:500px; max-height: 750px;">
-          <h1 class="font-semi-bold text-gray-800 capitalize text-xl p-2">
-            Better Life Prison
-            School </h1>
+          <h2 class="text-lg text-center font-bold tracking-tight text-gray-900 sm:text-lg">Better Life Prison
+            School
+          </h2>
+
           <p
             class="max-w-2xl mb-6 font-light text-black text-justify font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl   p-2">
-            Contextualized literacy and academic learning for inmates in Delhi and Gurgaon.
-            <br>
-
+            Contextualized literacy and academic learning for inmates in Delhi and Gurgaon. <br>
           </p>
 
-          <!-- section 1 div 1 carousel 1 -->
-          <div class="flex items-center justify-center bg-gray-500 relative container mx-auto"
-            style="max-width:1600px;">
-            <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
-              <!-- slides -->
-              <div class="carousel">
-                <div x-show="activeSlide === 0" class="carousel-item">
-                  <img class="w-full" src="./public/img/better-life-prison1.jpeg" alt="Image 1">
-                </div>
-                <div x-show="activeSlide === 1" class="carousel-item">
-                  <img class="w-full h-full" src="./public/img/better-life-prison2.jpeg" alt="Image 2">
-                </div>
-                <div x-show="activeSlide === 2" class="carousel-item">
-                  <img class="w-full h-full" src="./public/img/better-life-prison3.jpeg" alt="Image 3">
-                </div>
+          <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
+            <!-- slides -->
+            <div class="carousel">
+              <div x-show="activeSlide === 0" class="carousel-item">
+                <img class="w-full" src="./public/img/better-life-prison1.jpeg" alt="Image 1">
               </div>
-              <!-- controllers -->
-              <div class="carousel-controls">
-                <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
-                  class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
-                  ‹
-                </button>
-                <button @click="activeSlide = (activeSlide + 1) % 3"
-                  class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
-                  ›
-                </button>
+              <div x-show="activeSlide === 1" class="carousel-item">
+                <img class="w-full h-full" src="./public/img/better-life-prison2.jpeg" alt="Image 2">
               </div>
-              <!-- indicators -->
-              <div class="carousel-indicators mt-2 flex justify-center">
-                <template x-for="(slide, index) in 3">
-                  <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
-                    class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
-                </template>
+              <div x-show="activeSlide === 2" class="carousel-item">
+                <img class="w-full h-full" src="./public/img/better-life-prison3.jpeg" alt="Image 3">
               </div>
             </div>
+            <!-- controllers -->
+            <div class="carousel-controls">
+              <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
+                class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
+                ‹
+              </button>
+              <button @click="activeSlide = (activeSlide + 1) % 3"
+                class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+                ›
+              </button>
+            </div>
+            <!-- indicators -->
+            <div class="carousel-indicators mt-2 flex justify-center">
+              <template x-for="(slide, index) in 3">
+                <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
+                  class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
+              </template>
+            </div>
           </div>
-        </div>
 
-      </div>
+        </li>
 
+        <!-- ************** -->
+      </ul>
     </div>
-  </section>
-
+  </div>
+  <!-- card -->
 
   <!-- Footer section Start -->
   <footer class="bg-gray-900" aria-labelledby="footer-heading">
