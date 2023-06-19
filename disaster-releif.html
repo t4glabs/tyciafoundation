@@ -192,645 +192,542 @@
 
 
 
-    <!-- carousel card section-1 start -->
-    <section class="bg-gray-100  px-2 py-2">
+    <!-- card -->
+    <div class="bg-gray-200 py-12 sm:py-4 ">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 my-4">
+            <div class="mx-auto max-w-2xl">
+                <h1 class="text-2xl lg:text-4xl font-bold text-gray-800 capitalize text-center lg:pt-4">
+                    Disaster Relief
+                </h1>
+            </div>
 
-        <div class="container lg:px-6 mx-auto ">
+            <ul role="list"
+                class="mx-auto mt-14 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
 
-            <h1 class="text-center text-black font-bold lg:text-4xl text-2xl lg:py-8">
-                Disaster Relief </h1>
+                <!--   1 card -->
 
-            <div class="lg:flex lg:items-center justify-between m-6">
+                <li class="flex justify-center bg-white flex-col p-4 rounded-lg">
 
-                <!-- card-1 -->
-                <div class="flex flex-col container bg-white shadow-2xl rounded-lg my-10 p-4 lg:m-4"
-                    style="max-width:500px;">
-                    <h1 class="text-xl font-semibold text-gray-800 capitalize lg:text-xl p-2">Vaccine
+                    <h2 class="text-lg text-center font-semibold tracking-tight text-gray-900 sm:text-lg">Vaccine
                         Express
-                    </h1>
+                    </h2>
+
                     <p
                         class="max-w-2xl mb-6 font-light text-black text-justify font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl   p-2">
-                        Transforming local transport across India to make vaccination accessible. <br>
-
-                        <!-- <span style="color: red; text-decoration: underline;">
-                            <a class="hover:text-black" href="https://www.secondchancefellowship.org/"
-                                target="_blank">Learn more
-                                ></a>
-                        </span> -->
+                        Transforming local transport across India to make vaccination accessible.
+                        <br>
                     </p>
 
-
-                    <!-- section 1 div 1 carousel 1 -->
-                    <div class="flex items-center justify-center bg-gray-500 relative container mx-auto"
-                        style="max-width:1600px;">
-                        <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
-                            <!-- slides -->
-                            <div class="carousel">
-                                <div x-show="activeSlide === 0" class="carousel-item">
-                                    <img class="w-full " src="./public/img/vaccine-express1.jpeg" alt="Image 1">
-                                </div>
-                                <div x-show="activeSlide === 1" class="carousel-item">
-                                    <img class="w-full " src="./public/img/vaccine-express2.jpeg" alt="Image 2">
-                                </div>
-                                <div x-show="activeSlide === 2" class="carousel-item">
-                                    <img class="w-full " src="./public/img/vaccine-express3.jpeg" alt="Image 3">
-                                </div>
+                    <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
+                        <!-- slides -->
+                        <div class="carousel">
+                            <div x-show="activeSlide === 0" class="carousel-item">
+                                <img class="w-full " src="./public/img/vaccine-express1.jpeg" alt="Image 1">
                             </div>
-                            <!-- controllers -->
-                            <div class="carousel-controls">
-                                <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
-                                    class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
-                                    ‹
-                                </button>
-                                <button @click="activeSlide = (activeSlide + 1) % 3"
-                                    class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
-                                    ›
-                                </button>
+                            <div x-show="activeSlide === 1" class="carousel-item">
+                                <img class="w-full " src="./public/img/vaccine-express2.jpeg" alt="Image 2">
                             </div>
-                            <!-- indicators -->
-                            <div class="carousel-indicators mt-2 flex justify-center">
-                                <template x-for="(slide, index) in 3">
-                                    <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
-                                        class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
-                                </template>
+                            <div x-show="activeSlide === 2" class="carousel-item">
+                                <img class="w-full " src="./public/img/vaccine-express3.jpeg" alt="Image 3">
                             </div>
                         </div>
+                        <!-- controllers -->
+                        <div class="carousel-controls">
+                            <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
+                                class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
+                                ‹
+                            </button>
+                            <button @click="activeSlide = (activeSlide + 1) % 3"
+                                class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+                                ›
+                            </button>
+                        </div>
+                        <!-- indicators -->
+                        <div class="carousel-indicators mt-2 flex justify-center">
+                            <template x-for="(slide, index) in 3">
+                                <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
+                                    class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
+                            </template>
+                        </div>
                     </div>
-                </div>
+
+                </li>
 
 
-                <!-- card-2 -->
-                <div class="flex flex-col container bg-white shadow-2xl rounded-lg my-10 p-4 lg:m-4"
-                    style="max-width:500px;">
-                    <h1 class="text-xl font-semibold text-gray-800 capitalize lg:text-xl p-2">Ghar Ghar
+                <!-- 2 card -->
+                <li class="flex justify-center bg-white flex-col p-4 rounded-lg">
+
+                    <h2 class="text-lg text-center font-semibold tracking-tight text-gray-900 sm:text-lg"> Ghar Ghar
                         Doctor
-                    </h1>
-                    <p
-                        class="max-w-2xl mb-6 font-light text-black text-justify font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl   p-2">
-                        Bringing medical professionals to rural communities without access. <br>
+                    </h2>
 
-                        <!-- <span style="color: red; text-decoration: underline;">
-                            <a class="hover:text-black" href="https://www.projectunlearn.in/">
-                                Learn more ></a>
-                        </span> -->
+                    <p class="text-base leading-7 text-gray-600 p-2"> Bringing medical professionals to rural
+                        communities without access.
                     </p>
 
-                    <div class="flex items-center justify-center bg-gray-500 relative container mx-auto"
-                        style="max-width:1600px;">
-                        <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
-                            <!-- slides -->
-                            <div class="carousel">
-                                <div x-show="activeSlide === 0" class="carousel-item">
-                                    <img class="w-full" src="./public/img/ghar-ghar-doctor1.jpeg" alt="Image 1">
-                                </div>
-                                <div x-show="activeSlide === 1" class="carousel-item">
-                                    <img class="w-full h-full" src="./public/img/ghar-ghar-doctor2.jpeg" alt="Image 2">
-                                </div>
-                                <div x-show="activeSlide === 2" class="carousel-item">
-                                    <img class="w-full h-full" src="./public/img/ghar-ghar-doctor3.jpeg" alt="Image 3">
-                                </div>
+                    <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
+                        <!-- slides -->
+                        <div class="carousel">
+                            <div x-show="activeSlide === 0" class="carousel-item">
+                                <img class="w-full" src="./public/img/ghar-ghar-doctor1.jpeg" alt="Image 1">
                             </div>
-                            <!-- controllers -->
-                            <div class="carousel-controls">
-                                <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
-                                    class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
-                                    ‹
-                                </button>
-                                <button @click="activeSlide = (activeSlide + 1) % 3"
-                                    class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
-                                    ›
-                                </button>
+                            <div x-show="activeSlide === 1" class="carousel-item">
+                                <img class="w-full h-full" src="./public/img/ghar-ghar-doctor2.jpeg" alt="Image 2">
                             </div>
-                            <!-- indicators -->
-                            <div class="carousel-indicators mt-2 flex justify-center">
-                                <template x-for="(slide, index) in 3">
-                                    <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
-                                        class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
-                                </template>
+                            <div x-show="activeSlide === 2" class="carousel-item">
+                                <img class="w-full h-full" src="./public/img/ghar-ghar-doctor3.jpeg" alt="Image 3">
                             </div>
                         </div>
+                        <!-- controllers -->
+                        <div class="carousel-controls">
+                            <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
+                                class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
+                                ‹
+                            </button>
+                            <button @click="activeSlide = (activeSlide + 1) % 3"
+                                class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+                                ›
+                            </button>
+                        </div>
+                        <!-- indicators -->
+                        <div class="carousel-indicators mt-2 flex justify-center">
+                            <template x-for="(slide, index) in 3">
+                                <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
+                                    class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
+                            </template>
+                        </div>
                     </div>
-                </div>
+
+                </li>
 
 
-                <!-- card-3 -->
-                <div class="flex flex-col container bg-white shadow-2xl rounded-lg my-10 p-4 lg:m-4"
-                    style="max-width:500px;">
-                    <h1 class="text-xl font-semibold text-gray-800 capitalize lg:text-xl p-2">Covid
-                        Relief Kits
-                    </h1>
-                    <p
-                        class="max-w-2xl mb-6 font-light text-black text-justify font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl   p-2">
-                        Ration and covid support to families who lost livelihoods during the pandemic. <br>
+                <!-- 3 card -->
+                <li class="flex justify-center bg-white flex-col p-4 rounded-lg">
 
-                        <!-- <span style="color: red; text-decoration: underline;">
-                            <a class="hover:text-black" href="" target="_blank">Learn more
-                                ></a>
-                        </span> -->
+                    <h2 class="text-lg text-center font-semibold tracking-tight text-gray-900 sm:text-lg">Covid Relief
+                        Kits
+                    </h2>
+
+                    <p class="text-base leading-7 text-gray-600 p-2">
+                        Ration and covid support to families who lost livelihoods during the pandemic.
                     </p>
 
 
-                    <!-- section 1 div 1 carousel 1 -->
-                    <div class="flex items-center justify-center bg-gray-500 relative container mx-auto"
-                        style="max-width:1600px;">
-                        <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
-                            <!-- slides -->
-                            <div class="carousel">
-                                <div x-show="activeSlide === 0" class="carousel-item">
-                                    <img class="w-full" src="./public/img/covid-relief-kit1.jpeg" alt="Image 1">
-                                </div>
-                                <div x-show="activeSlide === 1" class="carousel-item">
-                                    <img class="w-full h-full" src="./public/img/covid-relief2.jpeg" alt="Image 2">
-                                </div>
-                                <div x-show="activeSlide === 2" class="carousel-item">
-                                    <img class="w-full h-full" src="./public/img/covid-relief3.jpeg" alt="Image 3">
-                                </div>
+                    <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
+                        <!-- slides -->
+                        <div class="carousel">
+                            <div x-show="activeSlide === 0" class="carousel-item">
+                                <img class="w-full" src="./public/img/covid-relief-kit1.jpeg" alt="Image 1">
                             </div>
-                            <!-- controllers -->
-                            <div class="carousel-controls">
-                                <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
-                                    class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
-                                    ‹
-                                </button>
-                                <button @click="activeSlide = (activeSlide + 1) % 3"
-                                    class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
-                                    ›
-                                </button>
+                            <div x-show="activeSlide === 1" class="carousel-item">
+                                <img class="w-full h-full" src="./public/img/covid-relief2.jpeg" alt="Image 2">
                             </div>
-                            <!-- indicators -->
-                            <div class="carousel-indicators mt-2 flex justify-center">
-                                <template x-for="(slide, index) in 3">
-                                    <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
-                                        class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
-                                </template>
+                            <div x-show="activeSlide === 2" class="carousel-item">
+                                <img class="w-full h-full" src="./public/img/covid-relief3.jpeg" alt="Image 3">
                             </div>
                         </div>
+                        <!-- controllers -->
+                        <div class="carousel-controls">
+                            <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
+                                class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
+                                ‹
+                            </button>
+                            <button @click="activeSlide = (activeSlide + 1) % 3"
+                                class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+                                ›
+                            </button>
+                        </div>
+                        <!-- indicators -->
+                        <div class="carousel-indicators mt-2 flex justify-center">
+                            <template x-for="(slide, index) in 3">
+                                <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
+                                    class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
+                            </template>
+                        </div>
                     </div>
-                </div>
 
-            </div>
-        </div>
-    </section>
-    <!-- carousel card section-1 end -->
+                </li>
 
+                <!-- 4 card -->
+                <li class="flex justify-center bg-white flex-col p-4 rounded-lg">
 
-
-    <!-- carousel card section-2 start -->
-    <section class="bg-gray-100 px-2 py-2">
-        <div class="container lg:px-6 mx-auto ">
-
-            <div class="lg:flex lg:items-center justify-between m-6">
-
-                <!-- card-4-->
-                <div class="flex flex-col container  bg-white shadow-2xl rounded-lg my-10 p-4 lg:m-4"
-                    style="max-width:500px;">
-                    <h1 class="text-xl font-semibold text-gray-800 capitalize lg:text-xl p-2">Eena Meena
+                    <h2 class="text-lg text-center font-semibold tracking-tight text-gray-900 sm:text-lg">Eena Meena
                         Teeka
-                    </h1>
-                    <p
-                        class="max-w-2xl mb-6 font-light text-justify text-black font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl   p-2">
-                        Vaccination awareness with contextualized messages for local community. <br>
+                    </h2>
 
-                        <!-- <span style="color: red; text-decoration: underline;">
-                            <a class="hover:text-black" href="">
-                                Learn more ></a>
-                        </span> -->
-                    </p>
-
-                    <!-- section 1 div 1 carousel 1 -->
-                    <div class="flex items-center justify-center bg-gray-500 relative container mx-auto"
-                        style="max-width:1600px;">
-                        <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
-                            <!-- slides -->
-                            <div class="carousel">
-                                <div x-show="activeSlide === 0" class="carousel-item">
-                                    <img class="w-full" src="./public/img/eena-meena-teeka1.jpeg" alt="Image 1">
-                                </div>
-                                <div x-show="activeSlide === 1" class="carousel-item">
-                                    <img class="w-full h-full" src="./public/img/eena-meena-teeka2.jpeg" alt="Image 2">
-                                </div>
-                                <div x-show="activeSlide === 2" class="carousel-item">
-                                    <img class="w-full h-full" src="./public/img/eena-meena-teeka3.jpeg" alt="Image 3">
-                                </div>
-                            </div>
-                            <!-- controllers -->
-                            <div class="carousel-controls">
-                                <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
-                                    class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
-                                    ‹
-                                </button>
-                                <button @click="activeSlide = (activeSlide + 1) % 3"
-                                    class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
-                                    ›
-                                </button>
-                            </div>
-                            <!-- indicators -->
-                            <div class="carousel-indicators mt-2 flex justify-center">
-                                <template x-for="(slide, index) in 3">
-                                    <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
-                                        class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
-                                </template>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- card-5-->
-                <div class="flex flex-col container bg-white shadow-2xl rounded-lg my-10 p-4 lg:m-4"
-                    style="max-width:500px;">
-                    <h1 class="text-xl font-semibold text-gray-800 capitalize lg:text-xl p-2">Auto
-                        Ambulance
-                    </h1>
-                    <p
-                        class="max-w-2xl mb-6 font-light text-justify text-black font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl   p-2">
-                        Ration and covid support to families who lost livelihoods during the pandemic. <br>
-
-                        <!-- <span style="color: red; text-decoration: underline;">
-                            <a class="hover:text-black" href="" target="_blank">Learn more
-                                ></a>
-                        </span> -->
+                    <p class="text-base leading-7 text-gray-600 p-2"> Vaccination awareness with contextualized messages
+                        for local community.
                     </p>
 
 
-                    <!-- section 1 div 1 carousel 1 -->
-                    <div class="flex items-center justify-center bg-gray-500 relative container mx-auto"
-                        style="max-width:1600px;">
-                        <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
-                            <!-- slides -->
-                            <div class="carousel">
-                                <div x-show="activeSlide === 0" class="carousel-item">
-                                    <img class="w-full" src="./public/img/auto-ambulance1.jpeg" alt="Image 1">
-                                </div>
-                                <div x-show="activeSlide === 1" class="carousel-item">
-                                    <img class="w-full h-full" src="./public/img/auto-ambulane2.jpeg" alt="Image 2">
-                                </div>
-                                <div x-show="activeSlide === 2" class="carousel-item">
-                                    <img class="w-full h-full" src="./public/img/auto-ambulance3.jpeg" alt="Image 3">
-                                </div>
+                    <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
+                        <!-- slides -->
+                        <div class="carousel">
+                            <div x-show="activeSlide === 0" class="carousel-item">
+                                <img class="w-full" src="./public/img/eena-meena-teeka1.jpeg" alt="Image 1">
                             </div>
-                            <!-- controllers -->
-                            <div class="carousel-controls">
-                                <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
-                                    class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
-                                    ‹
-                                </button>
-                                <button @click="activeSlide = (activeSlide + 1) % 3"
-                                    class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
-                                    ›
-                                </button>
+                            <div x-show="activeSlide === 1" class="carousel-item">
+                                <img class="w-full h-full" src="./public/img/eena-meena-teeka2.jpeg" alt="Image 2">
                             </div>
-                            <!-- indicators -->
-                            <div class="carousel-indicators mt-2 flex justify-center">
-                                <template x-for="(slide, index) in 3">
-                                    <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
-                                        class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
-                                </template>
+                            <div x-show="activeSlide === 2" class="carousel-item">
+                                <img class="w-full h-full" src="./public/img/eena-meena-teeka3.jpeg" alt="Image 3">
                             </div>
                         </div>
-                    </div>
-                </div>
-
-
-                <!-- card-6-->
-                <div class="flex flex-col container bg-white shadow-2xl rounded-lg my-10 p-4 lg:m-4"
-                    style="max-width:500px;">
-                    <h1 class="text-xl font-semibold text-gray-800 capitalize lg:text-xl p-2">Oxygen
-                        Connect
-                    </h1>
-                    <p
-                        class="max-w-2xl mb-6 font-light text-justify text-black font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl   p-2">
-                        Vaccination awareness with contextualized messages for local community. <br>
-
-
-                    </p>
-
-                    <!-- section 1 div 1 carousel 1 -->
-                    <div class="flex items-center justify-center bg-gray-500 relative container mx-auto"
-                        style="max-width:1600px;">
-                        <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
-                            <!-- slides -->
-                            <div class="carousel">
-                                <div x-show="activeSlide === 0" class="carousel-item">
-                                    <img class="w-full" src="./public/img/oxygen-connect1.jpeg" alt="Image 1">
-                                </div>
-                                <div x-show="activeSlide === 1" class="carousel-item">
-                                    <img class="w-full h-full" src="./public/img/oxygen-connect2.jpeg" alt="Image 2">
-                                </div>
-                                <div x-show="activeSlide === 2" class="carousel-item">
-                                    <img class="w-full h-full" src="./public/img/oxygen-connect3.jpeg" alt="Image 3">
-                                </div>
-                            </div>
-                            <!-- controllers -->
-                            <div class="carousel-controls">
-                                <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
-                                    class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
-                                    ‹
-                                </button>
-                                <button @click="activeSlide = (activeSlide + 1) % 3"
-                                    class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
-                                    ›
-                                </button>
-                            </div>
-                            <!-- indicators -->
-                            <div class="carousel-indicators mt-2 flex justify-center">
-                                <template x-for="(slide, index) in 3">
-                                    <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
-                                        class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
-                                </template>
-                            </div>
+                        <!-- controllers -->
+                        <div class="carousel-controls">
+                            <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
+                                class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
+                                ‹
+                            </button>
+                            <button @click="activeSlide = (activeSlide + 1) % 3"
+                                class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+                                ›
+                            </button>
+                        </div>
+                        <!-- indicators -->
+                        <div class="carousel-indicators mt-2 flex justify-center">
+                            <template x-for="(slide, index) in 3">
+                                <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
+                                    class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
+                            </template>
                         </div>
                     </div>
-                </div>
 
-            </div>
-        </div>
-    </section>
-    <!-- carousel card section-2 end -->
+                </li>
 
+                <!-- card 5 -->
+                <li class="flex justify-center bg-white flex-col p-4 rounded-lg">
 
-    <!-- carousel card section-3 start -->
-    <section class="bg-gray-100 px-2 py-2">
+                    <h2 class="text-lg text-center font-semibold tracking-tight text-gray-900 sm:text-lg">Auto Ambulance
+                    </h2>
 
-        <div class="container lg:px-6 mx-auto">
-
-            <div class="lg:flex lg:items-center justify-between m-6">
-                <!-- card-7-->
-                <div class="flex flex-col container  bg-white shadow-2xl rounded-lg my-10 p-4 lg:m-4"
-                    style="max-width:500px;">
-                    <h1 class="text-xl font-semibold text-gray-800 capitalize lg:text-xl p-2">
-                        Frontliners In Hospitals
-                    </h1>
-                    <p
-                        class="max-w-2xl mb-6 font-light text-justify text-black font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl   p-2">
-                        Admin support to overwhelmed Delhi hospitals at height of 2nd wave. <br>
-
+                    <p class="text-base leading-7 text-gray-600 p-2"> Free transport to and from hospital at the height
+                        of Delhi lockdown.
                     </p>
 
 
-                    <!-- section 1 div 1 carousel 1 -->
-                    <div class="flex items-center justify-center bg-gray-500 relative container mx-auto"
-                        style="max-width:1600px;">
-                        <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
-                            <!-- slides -->
-                            <div class="carousel">
-                                <div x-show="activeSlide === 0" class="carousel-item">
-                                    <img class="w-full" src="./public/img/frontline-hospital1.jpeg" alt="Image 1">
-                                </div>
-                                <div x-show="activeSlide === 1" class="carousel-item">
-                                    <img class="w-full h-full" src="./public/img/frontline-hospital2.jpeg"
-                                        alt="Image 2">
-                                </div>
-                                <div x-show="activeSlide === 2" class="carousel-item">
-                                    <img class="w-full h-full" src="./public/img/frontline-hospital3.jpeg"
-                                        alt="Image 3">
-                                </div>
+                    <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
+                        <!-- slides -->
+                        <div class="carousel">
+                            <div x-show="activeSlide === 0" class="carousel-item">
+                                <img class="w-full" src="./public/img/auto-ambulance1.jpeg" alt="Image 1">
                             </div>
-                            <!-- controllers -->
-                            <div class="carousel-controls">
-                                <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
-                                    class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
-                                    ‹
-                                </button>
-                                <button @click="activeSlide = (activeSlide + 1) % 3"
-                                    class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
-                                    ›
-                                </button>
+                            <div x-show="activeSlide === 1" class="carousel-item">
+                                <img class="w-full h-full" src="./public/img/auto-ambulane2.jpeg" alt="Image 2">
                             </div>
-                            <!-- indicators -->
-                            <div class="carousel-indicators mt-2 flex justify-center">
-                                <template x-for="(slide, index) in 3">
-                                    <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
-                                        class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
-                                </template>
+                            <div x-show="activeSlide === 2" class="carousel-item">
+                                <img class="w-full h-full" src="./public/img/auto-ambulance3.jpeg" alt="Image 3">
                             </div>
                         </div>
+                        <!-- controllers -->
+                        <div class="carousel-controls">
+                            <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
+                                class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
+                                ‹
+                            </button>
+                            <button @click="activeSlide = (activeSlide + 1) % 3"
+                                class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+                                ›
+                            </button>
+                        </div>
+                        <!-- indicators -->
+                        <div class="carousel-indicators mt-2 flex justify-center">
+                            <template x-for="(slide, index) in 3">
+                                <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
+                                    class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
+                            </template>
+                        </div>
                     </div>
-                </div>
 
+                </li>
 
-                <!-- card-8-->
-                <div class="flex flex-col container  bg-white shadow-2xl rounded-lg my-10 p-4 lg:m-4"
-                    style="max-width:500px;">
-                    <h1 class="text-xl font-semibold text-gray-800 capitalize lg:text-xl p-2">Tech-Based
-                        Initiatives
-                    </h1>
-                    <p
-                        class="max-w-2xl mb-6 font-light text-justify text-black font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl   p-2">
-                        Vaccine registration bot, rural telehealth, and awareness radio show. <br>
+                <!-- card 6 -->
+                <li class="flex justify-center bg-white flex-col p-4 rounded-lg">
 
+                    <h2 class="text-lg text-center font-semibold tracking-tight text-gray-900 sm:text-lg">Oxygen Connect
+                    </h2>
+
+                    <p class="text-base leading-7 text-gray-600 p-2"> Delivering oxygen via concentrators and plant to
+                        communities in need.
                     </p>
 
-                    <!-- section 1 div 1 carousel 1 -->
-                    <div class="flex items-center justify-center bg-gray-500 relative container mx-auto"
-                        style="max-width:1600px;">
-                        <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
-                            <!-- slides -->
-                            <div class="carousel">
-                                <div x-show="activeSlide === 0" class="carousel-item">
-                                    <img class="w-full" src="./public/img/tech-based-initiative1.jpeg" alt="Image 1">
-                                </div>
-                                <div x-show="activeSlide === 1" class="carousel-item">
-                                    <img class="w-full h-full" src="./public/img/tech-based-initiative2.jpeg"
-                                        alt="Image 2">
-                                </div>
-                                <div x-show="activeSlide === 2" class="carousel-item">
-                                    <img class="w-full h-full" src="./public/img/tech-based-initiative3.jpeg"
-                                        alt="Image 3">
-                                </div>
+
+                    <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
+                        <!-- slides -->
+                        <div class="carousel">
+                            <div x-show="activeSlide === 0" class="carousel-item">
+                                <img class="w-full" src="./public/img/oxygen-connect1.jpeg" alt="Image 1">
                             </div>
-                            <!-- controllers -->
-                            <div class="carousel-controls">
-                                <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
-                                    class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
-                                    ‹
-                                </button>
-                                <button @click="activeSlide = (activeSlide + 1) % 3"
-                                    class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
-                                    ›
-                                </button>
+                            <div x-show="activeSlide === 1" class="carousel-item">
+                                <img class="w-full h-full" src="./public/img/oxygen-connect2.jpeg" alt="Image 2">
                             </div>
-                            <!-- indicators -->
-                            <div class="carousel-indicators mt-2 flex justify-center">
-                                <template x-for="(slide, index) in 3">
-                                    <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
-                                        class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
-                                </template>
+                            <div x-show="activeSlide === 2" class="carousel-item">
+                                <img class="w-full h-full" src="./public/img/oxygen-connect3.jpeg" alt="Image 3">
                             </div>
                         </div>
+                        <!-- controllers -->
+                        <div class="carousel-controls">
+                            <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
+                                class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
+                                ‹
+                            </button>
+                            <button @click="activeSlide = (activeSlide + 1) % 3"
+                                class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+                                ›
+                            </button>
+                        </div>
+                        <!-- indicators -->
+                        <div class="carousel-indicators mt-2 flex justify-center">
+                            <template x-for="(slide, index) in 3">
+                                <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
+                                    class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
+                            </template>
+                        </div>
                     </div>
-                </div>
+
+                </li>
 
 
-                <!-- card-9-->
-                <div class="flex flex-col container bg-white shadow-2xl rounded-lg my-10 p-4 lg:m-4"
-                    style="max-width:500px;">
-                    <h1 class="text-xl font-semibold text-gray-800 capitalize lg:text-xl p-2">Shav
-                        Vahaan
-                    </h1>
-                    <p
-                        class="max-w-2xl mb-6 font-light text-black text-justify font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl   p-2">
-                        Transporting those who have passed on and their families to cremation grounds <br>
+                <!-- card 7 -->
+                <li class="flex justify-center bg-white flex-col p-4 rounded-lg">
 
+                    <h2 class="text-lg text-center font-semibold tracking-tight text-gray-900 sm:text-lg">Frontliners in
+                        hospitals
+                    </h2>
 
+                    <p class="text-base leading-7 text-gray-600 p-2">Admin support to overwhelmed Delhi hospitals at
+                        height of 2nd wave.
                     </p>
 
-                    <!-- section 1 div 1 carousel 1 -->
-                    <div class="flex items-center justify-center bg-gray-500 relative container mx-auto"
-                        style="max-width:1600px;">
-                        <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
-                            <!-- slides -->
-                            <div class="carousel">
-                                <div x-show="activeSlide === 0" class="carousel-item">
-                                    <img class="w-full" src="./public/img/shav-vahan1.jpeg" alt="Image 1">
-                                </div>
-                                <div x-show="activeSlide === 1" class="carousel-item">
-                                    <img class="w-full h-full" src="./public/img/shav-vahan2.jpeg" alt="Image 2">
-                                </div>
-                                <div x-show="activeSlide === 2" class="carousel-item">
-                                    <img class="w-full h-full" src="./public/img/shav-vahan3.webp" alt="Image 3">
-                                </div>
+
+                    <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
+                        <!-- slides -->
+                        <div class="carousel">
+                            <div x-show="activeSlide === 0" class="carousel-item">
+                                <img class="w-full" src="./public/img/frontline-hospital1.jpeg" alt="Image 1">
                             </div>
-                            <!-- controllers -->
-                            <div class="carousel-controls">
-                                <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
-                                    class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
-                                    ‹
-                                </button>
-                                <button @click="activeSlide = (activeSlide + 1) % 3"
-                                    class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
-                                    ›
-                                </button>
+                            <div x-show="activeSlide === 1" class="carousel-item">
+                                <img class="w-full h-full" src="./public/img/frontline-hospital2.jpeg" alt="Image 2">
                             </div>
-                            <!-- indicators -->
-                            <div class="carousel-indicators mt-2 flex justify-center">
-                                <template x-for="(slide, index) in 3">
-                                    <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
-                                        class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
-                                </template>
+                            <div x-show="activeSlide === 2" class="carousel-item">
+                                <img class="w-full h-full" src="./public/img/frontline-hospital3.jpeg" alt="Image 3">
                             </div>
                         </div>
+                        <!-- controllers -->
+                        <div class="carousel-controls">
+                            <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
+                                class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
+                                ‹
+                            </button>
+                            <button @click="activeSlide = (activeSlide + 1) % 3"
+                                class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+                                ›
+                            </button>
+                        </div>
+                        <!-- indicators -->
+                        <div class="carousel-indicators mt-2 flex justify-center">
+                            <template x-for="(slide, index) in 3">
+                                <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
+                                    class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
+                            </template>
+                        </div>
                     </div>
-                </div>
 
-            </div>
-        </div>
-    </section>
+                </li>
 
 
-    <!-- carousel card section-4 start -->
-    <section class="bg-gray-100 px-2 py-2">
+                <!-- card 8 -->
+                <li class="flex justify-center bg-white flex-col p-4 rounded-lg">
 
-        <div class="container lg:px-6 mx-auto">
+                    <h2 class="text-lg text-center font-semibold tracking-tight text-gray-900 sm:text-lg">Tech-based
+                        initiatives
+                    </h2>
 
-            <div class="lg:flex lg:items-center m-6 justify-between">
-                <!-- card-10-->
-                <div class="flex flex-col container  bg-white shadow-2xl rounded-lg my-10 p-4 lg:m-4"
-                    style="max-width:500px;">
-                    <h1 class="text-xl font-semibold text-gray-800 capitalize lg:text-xl p-2">Menstrual
+                    <p class="text-base leading-7 text-gray-600 p-2">Vaccine registration bot, rural telehealth, and
+                        awareness radio show.
+                    </p>
+
+
+                    <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
+                        <!-- slides -->
+                        <div class="carousel">
+                            <div x-show="activeSlide === 0" class="carousel-item">
+                                <img class="w-full" src="./public/img/tech-based-initiative1.jpeg" alt="Image 1">
+                            </div>
+                            <div x-show="activeSlide === 1" class="carousel-item">
+                                <img class="w-full h-full" src="./public/img/tech-based-initiative2.jpeg" alt="Image 2">
+                            </div>
+                            <div x-show="activeSlide === 2" class="carousel-item">
+                                <img class="w-full h-full" src="./public/img/tech-based-initiative3.jpeg" alt="Image 3">
+                            </div>
+                        </div>
+                        <!-- controllers -->
+                        <div class="carousel-controls">
+                            <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
+                                class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
+                                ‹
+                            </button>
+                            <button @click="activeSlide = (activeSlide + 1) % 3"
+                                class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+                                ›
+                            </button>
+                        </div>
+                        <!-- indicators -->
+                        <div class="carousel-indicators mt-2 flex justify-center">
+                            <template x-for="(slide, index) in 3">
+                                <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
+                                    class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
+                            </template>
+                        </div>
+                    </div>
+
+                </li>
+
+                <!-- card 9 -->
+                <li class="flex justify-center bg-white flex-col p-4 rounded-lg">
+
+                    <h2 class="text-lg text-center font-semibold tracking-tight text-gray-900 sm:text-lg">Shav Vahaan
+                    </h2>
+
+                    <p class="text-base leading-7 text-gray-600 p-2"> Transporting those who have passed on and their
+                        families to cremation grounds.
+                    </p>
+
+
+                    <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
+                        <!-- slides -->
+                        <div class="carousel">
+                            <div x-show="activeSlide === 0" class="carousel-item">
+                                <img class="w-full" src="./public/img/shav-vahan1.jpeg" alt="Image 1">
+                            </div>
+                            <div x-show="activeSlide === 1" class="carousel-item">
+                                <img class="w-full h-full" src="./public/img/shav-vahan2.jpeg" alt="Image 2">
+                            </div>
+                            <div x-show="activeSlide === 2" class="carousel-item">
+                                <img class="w-full h-full" src="./public/img/shav-vahan3.webp" alt="Image 3">
+                            </div>
+                        </div>
+                        <!-- controllers -->
+                        <div class="carousel-controls">
+                            <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
+                                class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
+                                ‹
+                            </button>
+                            <button @click="activeSlide = (activeSlide + 1) % 3"
+                                class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+                                ›
+                            </button>
+                        </div>
+                        <!-- indicators -->
+                        <div class="carousel-indicators mt-2 flex justify-center">
+                            <template x-for="(slide, index) in 3">
+                                <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
+                                    class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
+                            </template>
+                        </div>
+                    </div>
+
+                </li>
+
+
+                <!-- card 10 -->
+                <li class="flex justify-center bg-white flex-col p-4 rounded-lg">
+
+                    <h2 class="text-lg text-center font-semibold tracking-tight text-gray-900 sm:text-lg">Menstrual
                         Health
-                    </h1>
-                    <p
-                        class="max-w-2xl mb-6 font-light text-black text-justify font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl   p-2">
-                        Reusable menstrual pads and cups for women affected by lockdown. <br>
+                    </h2>
 
+                    <p class="text-base leading-7 text-gray-600 p-2">Reusable menstrual pads and cups for women affected
+                        by lockdown.
                     </p>
 
 
-                    <!-- section 1 div 1 carousel 1 -->
-                    <div class="flex items-center justify-center bg-gray-500 relative container mx-auto"
-                        style="max-width:1600px;">
-                        <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
-                            <!-- slides -->
-                            <div class="carousel">
-                                <div x-show="activeSlide === 0" class="carousel-item">
-                                    <img class="w-full" src="./public/img/menstrula-health1.jpeg" alt="Image 1">
-                                </div>
-                                <div x-show="activeSlide === 1" class="carousel-item">
-                                    <img class="w-full h-full" src="./public/img/menstrual-health2.jpeg" alt="Image 2">
-                                </div>
-                                <div x-show="activeSlide === 2" class="carousel-item">
-                                    <img class="w-full h-full" src="./public/img/menstrual-health3.jpeg" alt="Image 3">
-                                </div>
+                    <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
+                        <!-- slides -->
+                        <div class="carousel">
+                            <div x-show="activeSlide === 0" class="carousel-item">
+                                <img class="w-full" src="./public/img/menstrual-health2.jpeg" alt="Image 1">
                             </div>
-                            <!-- controllers -->
-                            <div class="carousel-controls">
-                                <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
-                                    class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
-                                    ‹
-                                </button>
-                                <button @click="activeSlide = (activeSlide + 1) % 3"
-                                    class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
-                                    ›
-                                </button>
+                            <div x-show="activeSlide === 1" class="carousel-item">
+                                <img class="w-full h-full" src="./public/img/menstrual-health3.jpeg" alt="Image 2">
                             </div>
-                            <!-- indicators -->
-                            <div class="carousel-indicators mt-2 flex justify-center">
-                                <template x-for="(slide, index) in 3">
-                                    <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
-                                        class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
-                                </template>
+                            <div x-show="activeSlide === 2" class="carousel-item">
+                                <img class="w-full h-full" src="./public/img/menstrula-health1.jpeg" alt="Image 3">
                             </div>
                         </div>
+                        <!-- controllers -->
+                        <div class="carousel-controls">
+                            <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
+                                class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
+                                ‹
+                            </button>
+                            <button @click="activeSlide = (activeSlide + 1) % 3"
+                                class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+                                ›
+                            </button>
+                        </div>
+                        <!-- indicators -->
+                        <div class="carousel-indicators mt-2 flex justify-center">
+                            <template x-for="(slide, index) in 3">
+                                <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
+                                    class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
+                            </template>
+                        </div>
                     </div>
-                </div>
 
+                </li>
 
+                <!-- card 11 -->
+                <li class="flex justify-center bg-white flex-col p-4 rounded-lg">
 
-                <!-- card-11-->
-                <div class="flex flex-col container bg-white shadow-2xl rounded-lg my-10 p-4 lg:m-4"
-                    style="max-width:500px;">
-                    <h1 class="text-xl font-semibold text-gray-800 capitalize lg:text-xl p-2">
-                        Psychosocial Support
-                    </h1>
-                    <p
-                        class="max-w-2xl mb-6 font-light text-black text-justify font-medium lg:mb-8 md:text-1.8xl  lg:text-1.8xl   p-2">
-                        Mental health counseling for covid affected families. <br>
+                    <h2 class="text-lg text-center font-semibold tracking-tight text-gray-900 sm:text-lg">Psychosocial
+                        Support
+                    </h2>
 
+                    <p class="text-base leading-7 text-gray-600 p-2">Mental health counseling for covid affected
+                        families.
                     </p>
 
-                    <!-- section 1 div 1 carousel 1 -->
-                    <div class="flex items-center justify-center bg-gray-500 relative container mx-auto"
-                        style="max-width:1600px;">
-                        <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
-                            <!-- slides -->
-                            <div class="carousel">
-                                <div x-show="activeSlide === 0" class="carousel-item">
-                                    <img class="w-full" src="./public/img/psychosocila1.jpeg" alt="Image 1">
-                                </div>
-                                <div x-show="activeSlide === 1" class="carousel-item">
-                                    <img class="w-full h-full" src="./public/img/psychosocial2.jpeg" alt="Image 2">
-                                </div>
-                                <div x-show="activeSlide === 2" class="carousel-item">
-                                    <img class="w-full h-full" src="./public/img/psychosocial3.jpeg" alt="Image 3">
-                                </div>
+
+                    <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
+                        <!-- slides -->
+                        <div class="carousel">
+                            <div x-show="activeSlide === 0" class="carousel-item">
+                                <img class="w-full" src="./public/img/psychosocial2.jpeg" alt="Image 1">
                             </div>
-                            <!-- controllers -->
-                            <div class="carousel-controls">
-                                <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
-                                    class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
-                                    ‹
-                                </button>
-                                <button @click="activeSlide = (activeSlide + 1) % 3"
-                                    class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
-                                    ›
-                                </button>
+                            <div x-show="activeSlide === 1" class="carousel-item">
+                                <img class="w-full h-full" src="./public/img/psychosocial3.jpeg" alt="Image 2">
                             </div>
-                            <!-- indicators -->
-                            <div class="carousel-indicators mt-2 flex justify-center">
-                                <template x-for="(slide, index) in 3">
-                                    <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
-                                        class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
-                                </template>
+                            <div x-show="activeSlide === 2" class="carousel-item">
+                                <img class="w-full h-full" src="./public/img/psychosocila1.jpeg" alt="Image 3">
                             </div>
                         </div>
+                        <!-- controllers -->
+                        <div class="carousel-controls">
+                            <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
+                                class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
+                                ‹
+                            </button>
+                            <button @click="activeSlide = (activeSlide + 1) % 3"
+                                class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+                                ›
+                            </button>
+                        </div>
+                        <!-- indicators -->
+                        <div class="carousel-indicators mt-2 flex justify-center">
+                            <template x-for="(slide, index) in 3">
+                                <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
+                                    class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
+                            </template>
+                        </div>
                     </div>
-                </div>
 
-            </div>
+                </li>
 
+            </ul>
         </div>
-    </section>
-    <!--  carousel card end -->
+    </div>
+    <!-- card -->
 
 
 

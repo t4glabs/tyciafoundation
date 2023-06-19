@@ -125,10 +125,7 @@
 
 
 
-
-
-
-  <!-- demo -->
+  <!-- card -->
   <div class="bg-gray-200 py-12 sm:py-4 ">
     <div class="mx-auto max-w-7xl px-6 lg:px-8 my-4">
       <div class="mx-auto max-w-2xl">
@@ -140,7 +137,7 @@
       <ul role="list"
         class="mx-auto mt-14 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
 
-        <!--   1 Team -->
+        <!--   1 card -->
 
         <li class="flex justify-center bg-white flex-col p-4 rounded-lg">
 
@@ -204,7 +201,7 @@
         </li>
 
 
-        <!-- 2 Team -->
+        <!-- 2 card -->
         <li class="flex justify-center bg-white flex-col p-4 rounded-lg">
 
           <h2 class="text-lg text-center font-semibold tracking-tight text-gray-900 sm:text-lg"> Pagdandi Yatra
@@ -250,7 +247,7 @@
         </li>
 
 
-        <!-- 3 Team -->
+        <!-- 3 card -->
         <li class="flex justify-center bg-white flex-col p-4 rounded-lg">
 
           <h2 class="text-lg text-center font-semibold tracking-tight text-gray-900 sm:text-lg">Project Prayas
@@ -265,29 +262,24 @@
             <!-- slides -->
             <div class="carousel">
               <div x-show="activeSlide === 0" class="carousel-item">
-                <img class="w-full" src="./public/img/covid-relief-kit1.jpeg" alt="Image 1">
+                <img class="w-full" src="./public/img/project-prayas1.jpeg" alt="Image 1">
               </div>
-              <div x-show="activeSlide === 1" class="carousel-item">
-                <img class="w-full h-full" src="./public/img/covid-relief2.jpeg" alt="Image 2">
-              </div>
-              <div x-show="activeSlide === 2" class="carousel-item">
-                <img class="w-full h-full" src="./public/img/covid-relief3.jpeg" alt="Image 3">
-              </div>
+
             </div>
             <!-- controllers -->
             <div class="carousel-controls">
-              <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
+              <button @click="activeSlide = (activeSlide - 1 + 1) % 1"
                 class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
                 ‹
               </button>
-              <button @click="activeSlide = (activeSlide + 1) % 3"
+              <button @click="activeSlide = (activeSlide + 1) % 1"
                 class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
                 ›
               </button>
             </div>
             <!-- indicators -->
             <div class="carousel-indicators mt-2 flex justify-center">
-              <template x-for="(slide, index) in 3">
+              <template x-for="(slide, index) in 1">
                 <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
                   class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
               </template>
@@ -295,80 +287,13 @@
           </div>
 
         </li>
-
-
-
-        <!-- 4 Team -->
-
-        <!-- <li class="flex justify-center bg-gray-100 flex-col p-4 rounded-2xl">
-
-
-          <ul role="list" class="mt-6 flex gap-x-6 justify-center">
-            <li>
-              <h3 class="text-center text-lg font-semibold leading-8 tracking-tight text-gray-900">
-                Eleena George
-            </li>
-            <li class="pt-1">
-              <a href="https://www.linkedin.com/in/eleena-george-763567148/"
-                class="text-black hover:text-gray-500 pt-2">
-                <span class="sr-only">LinkedIn</span>
-                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                  <path fill-rule="evenodd"
-                    d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                    clip-rule="evenodd" />
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <h2 class="text-lg text-center tracking-tight text-gray-900 sm:text-lg">Project Prayas</h2>
-
-          <p class="text-base leading-7 text-gray-600 p-2"> Developing holistic assessment tools to enable individuals
-            of all ages to reach their full potential.
-
-          </p>
-
-          <img class="aspect-[3/2] rounded-2xl object-cover" src="public/img/project-prayas1.jpeg" alt="">
-
-        </li> -->
-
-
-        <!-- 5  Team -->
-
-        <!-- <li class="flex justify-center bg-gray-100 flex-col p-4 rounded-2xl">
-          <ul role="list" class="mt-6 flex gap-x-6 justify-center">
-            <li>
-              <h3 class="text-center text-lg font-semibold leading-8 tracking-tight text-gray-900">
-                Prakash Raikwar
-
-
-            </li>
-          </ul>
-
-          <h2 class="text-lg text-center tracking-tight text-gray-900 sm:text-lg">Lead, Community Initiatives
-          </h2>
-
-          <p class="text-base leading-7 text-gray-600 p-2">Self discovery and rural immersion program in the Satpura
-            Forest, MP.Self discovery and rural immersion program in the Satpura
-            Forest, MP.
-
-          </p>
-
-          <img class="aspect-[3/2] rounded-2xl object-cover" src="public/img/Team/team5.webp" alt="">
-
-        </li> -->
-
-
-
         <!-- ************** -->
       </ul>
     </div>
   </div>
-  <!-- Team Section End -->
+  <!-- card -->
 
 
-
-
-  <!-- demo -->
 
   <!-- Footer section Start -->
   <footer class="bg-gray-900" aria-labelledby="footer-heading">
