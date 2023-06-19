@@ -1881,6 +1881,10 @@ video {
     padding-bottom: 2rem;
   }
 
+  .lg\:pt-0 {
+    padding-top: 0px;
+  }
+
   .lg\:pt-4 {
     padding-top: 1rem;
   }
